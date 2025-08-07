@@ -12,7 +12,7 @@ const Header = () => {
 
             {/* Logo */}
             <div className="logo">
-                <a href="/"><img src="src/assets/images/demo-logo.png" alt="Logo" className="logo w-12 h-auto" /></a>
+                <a href="/"><img src="/assets/images/demo-logo.png" alt="Logo" className="logo w-12 h-auto" /></a>
             </div>
 
             {/* Right Section */}
