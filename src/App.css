@@ -988,8 +988,9 @@ body {
 /* Left Side */
 .left-content {
   flex: 1;
-  min-width: 300px;
-  max-width: 600px;
+  /* min-width: 300px;
+  max-width: 600px; */
+  width: 50%;
 }
 
 .left-content h1 {
@@ -1953,6 +1954,7 @@ body {
   /* flex: 1; */
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 .memberform .input-group label {

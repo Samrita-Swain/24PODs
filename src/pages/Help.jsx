@@ -17,7 +17,8 @@ const Help = () => {
                     <h1>How Can we Help</h1>
                 </div>
             </div>
-            <div className="help-second section-container">
+            <div className="help-second">
+                <div className="help-second section-container">
                 <div className="help-second left-content">
                     <div className="text-section">
                         <h1>
@@ -43,7 +44,9 @@ const Help = () => {
                     </div>
                 </div>
             </div>
+            </div>
             <div className="help_third">
+                <div className="help_third container">
                 <div className="help-third-section">
                     <div className="text-section">
                     <h1>
@@ -86,6 +89,7 @@ const Help = () => {
 
                 </div>
                 </div>
+            </div>
             </div>
             <div className="help-fourth">
                 <div className="editing-container container">
