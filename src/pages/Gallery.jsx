@@ -3,13 +3,13 @@ import React, { useState } from 'react';
 const tabs = ['All', 'Lorem Ipsum', 'Lorem Ipsum 2', 'Lorem Ipsum 3'];
 
 const galleryItems = [
-    { id: 1, category: 'Lorem Ipsum', src: 'src/assets/images/about-1.jpg' },
-    { id: 2, category: 'Lorem Ipsum 2', src: 'src/assets/images/about-2.jpg' },
-    { id: 3, category: 'Lorem Ipsum 3', src: 'src/assets/images/about-3.jpg' },
-    { id: 4, category: 'Lorem Ipsum', src: 'src/assets/images/about-2.jpg' },
-    { id: 5, category: 'Lorem Ipsum', src: 'src/assets/images/about-1.jpg' },
-    { id: 6, category: 'Lorem Ipsum 2', src: 'src/assets/images/about-3.jpg' },
-    { id: 7, category: 'Lorem Ipsum 3', src: 'src/assets/images/about-1.jpg' },
+    { id: 1, category: 'Lorem Ipsum', src: '/images/about-1.jpg' },
+    { id: 2, category: 'Lorem Ipsum 2', src: '/images/about-2.jpg' },
+    { id: 3, category: 'Lorem Ipsum 3', src: '/images/about-3.jpg' },
+    { id: 4, category: 'Lorem Ipsum', src: '/images/about-2.jpg' },
+    { id: 5, category: 'Lorem Ipsum', src: '/images/about-1.jpg' },
+    { id: 6, category: 'Lorem Ipsum 2', src: '/images/about-3.jpg' },
+    { id: 7, category: 'Lorem Ipsum 3', src: '/images/about-1.jpg' },
 ];
 
 const Gallery = () => {

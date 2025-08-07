@@ -6,7 +6,7 @@ const tabData = [
         id: 1,
         title: "Lorem Ipsum",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        image: "src/assets/images/about-1.jpg",
+        image: "/images/about-1.jpg",
         content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
     unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -19,7 +19,7 @@ const tabData = [
         id: 2,
         title: "Lorem Ipsum",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        image: "src/assets/images/about-2.jpg",
+        image: "/images/about-2.jpg",
         content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
     unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -32,7 +32,7 @@ const tabData = [
         id: 3,
         title: "Lorem Ipsum",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        image: "src/assets/images/about-3.jpg",
+        image: "/images/about-3.jpg",
         content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
     unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -45,7 +45,7 @@ const tabData = [
         id: 4,
         title: "Lorem Ipsum",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        image: "src/assets/images/about-2.jpg",
+        image: "/images/about-2.jpg",
         content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
     unknown printer took a galley of type and scrambled it to make a type specimen book. 

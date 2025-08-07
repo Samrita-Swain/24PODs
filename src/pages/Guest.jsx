@@ -1,11 +1,11 @@
 import React from 'react'
 
 const services = [
-    { name: "Studio", icon: "src/assets/images/studio.png" },
-    { name: "Shoot", icon: "src/assets/images/shoot.png" },
-    { name: "Editing", icon: "src/assets/images/video-editing.png" },
-    { name: "Ads", icon: "src/assets/images/ads.png" },
-    { name: "Marketing", icon: "src/assets/images/marketing.png" },
+    { name: "Studio", icon: "/images/studio.png" },
+    { name: "Shoot", icon: "/images/shoot.png" },
+    { name: "Editing", icon: "s/images/video-editing.png" },
+    { name: "Ads", icon: "/images/ads.png" },
+    { name: "Marketing", icon: "/images/marketing.png" },
 ];
 
 
@@ -36,7 +36,7 @@ const Help = () => {
                     </div>
 
                     <div className="image-section">
-                        <img src="src/assets/images/guest-img.png" alt="" />
+                        <img src="/images/guest-img.png" alt="" />
                     </div>
 
                 </div>
@@ -58,7 +58,7 @@ const Help = () => {
                 <div className="editing-container container">
                     <div className="editing-image">
                         <div className="image-border">
-                            <img src="src/assets/images/help-editing.png" alt="Editing" />
+                            <img src="/images/help-editing.png" alt="Editing" />
                         </div>
                     </div>
                     <div className="editing-content">
@@ -99,7 +99,7 @@ const Help = () => {
                     </div>
 
                     <div className="image-section">
-                        <img src="src/assets/images/about-third.png" alt="" />
+                        <img src="/images/about-third.png" alt="" />
                     </div>
 
                 </div>
