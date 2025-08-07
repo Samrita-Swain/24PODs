@@ -7,31 +7,31 @@ const videoData = [
   {
     id: 1,
     tab: "All",
-    thumbnail: "images/about-1.jpg",
+    thumbnail: "src/assets/images/about-1.jpg",
     videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4"
   },
   {
     id: 2,
     tab: "Lorem Ipsum",
-    thumbnail: "images/about-2.jpg",
+    thumbnail: "src/assets/images/about-2.jpg",
     videoUrl: "https://www.w3schools.com/html/movie.mp4"
   },
   {
     id: 3,
     tab: "Lorem Ipsum 3",
-    thumbnail: "images/about-3.jpg",
+    thumbnail: "src/assets/images/about-3.jpg",
     videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4"
   },
   {
     id: 4,
     tab: "Lorem Ipsum 2",
-    thumbnail: "images/about-2.jpg",
+    thumbnail: "src/assets/images/about-2.jpg",
     videoUrl: "https://www.w3schools.com/html/movie.mp4"
   },
   {
     id: 5,
     tab: "Lorem Ipsum 2",
-    thumbnail: "images/about-3.jpg",
+    thumbnail: "src/assets/images/about-3.jpg",
     videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4"
   }
 ];

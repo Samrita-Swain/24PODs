@@ -56,7 +56,7 @@ const Welcome = () => {
                     </div>
 
                     <div className="image-section">
-                        <img src="images/about-third.png" alt="" />
+                        <img src="src/assets/images/about-third.png" alt="" />
                     </div>
 
                 </div>

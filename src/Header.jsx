@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaXTwitter, FaInstagram  } from "react-icons/fa6";
+import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
@@ -12,7 +12,7 @@ const Header = () => {
 
             {/* Logo */}
             <div className="logo">
-                <a href="/"><img src="/images/demo-logo.png" alt="Logo" className="logo w-12 h-auto" /></a>
+                <a href="/"><img src="src/assets/images/demo-logo.png" alt="Logo" className="logo w-12 h-auto" /></a>
             </div>
 
             {/* Right Section */}
@@ -48,7 +48,7 @@ const Header = () => {
 
                     {/* Join Us Button inside the menu */}
                     <button className="button menu-button mt-6">
-                       <a href="/contact_us">Join Us</a>
+                        <a href="/contact_us">Join Us</a>
                     </button>
 
                     {/* Social Icons */}

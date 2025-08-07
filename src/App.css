@@ -457,7 +457,7 @@ body {
 
 /* about section */
 .about-first {
-  background-image: url(/images/about-banner.png);
+  background-image: url(assets/images/about-banner.png);
   height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -941,7 +941,7 @@ body {
 
 /* How can we help */
 .help-first {
-  background-image: url(../images/help-banner.png);
+  background-image: url(assets/images/help-banner.png);
   height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -1213,7 +1213,7 @@ body {
 }
 
 .help-third-boxes .second-box {
-  background: url(/images/help-box.png);
+  background: url(assets/images/help-box.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1533,7 +1533,7 @@ body {
 
 /* Be our guest */
 .our-guest-first {
-  background-image: url(../images/be_our_guest_banner.png);
+  background-image: url(assets/images/be_our_guest_banner.png);
   height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -1711,7 +1711,7 @@ body {
 
 /* Become A member */
 .welcome-first {
-  background-image: url(../images/welcome-banner.png);
+  background-image: url(assets/images/welcome-banner.png);
   height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -2014,7 +2014,7 @@ body {
 
 /* Gallery */
 .gallery-first {
-  background-image: url(../images/gallery-banner.png);
+  background-image: url(assets/images/gallery-banner.png);
   height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -2168,7 +2168,7 @@ body {
 
 /* Contact us */
 .contactus-first {
-  background-image: url(../images/contactus-banner.png);
+  background-image: url(assets/images/contactus-banner.png);
   height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -2477,7 +2477,7 @@ textarea {
 }
 
 .from-reality-first {
-  background-image: url(../images/from-reality-banner.png) !important;
+  background-image: url(assets/images/from-reality-banner.png) !important;
   height: 60vh;
 }
 
@@ -2485,7 +2485,7 @@ textarea {
 
 /* Vblogs */
 .vblogs-first {
-  background-image: url(../images/vblogs-banner.png);
+  background-image: url(assets/images/vblogs-banner.png);
   height: 60vh;
   background-position: center;
   background-repeat: no-repeat;

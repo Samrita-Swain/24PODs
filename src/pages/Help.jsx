@@ -1,11 +1,11 @@
 import React from 'react'
 
 const services = [
-    { name: "Studio", icon: "/images/studio.png" },
-    { name: "Shoot", icon: "/images/shoot.png" },
-    { name: "Editing", icon: "/images/video-editing.png" },
-    { name: "Ads", icon: "/images/ads.png" },
-    { name: "Marketing", icon: "/images/marketing.png" },
+    { name: "Studio", icon: "src/assets/images/studio.png" },
+    { name: "Shoot", icon: "src/assets/images/shoot.png" },
+    { name: "Editing", icon: "src/assets/images/video-editing.png" },
+    { name: "Ads", icon: "src/assets/images/ads.png" },
+    { name: "Marketing", icon: "src/assets/images/marketing.png" },
 ];
 
 
@@ -36,8 +36,8 @@ const Help = () => {
 
                 <div className="right-content">
                     <div className="image-stack">
-                        <img src="images/1st-img.jpg" alt="Host 1" className="host-img" />
-                        <img src="images/2nd-img.jpg" alt="Host 2" className="host-img second-img
+                        <img src="src/assets/images/1st-img.jpg" alt="Host 1" className="host-img" />
+                        <img src="src/assets/images/2nd-img.jpg" alt="Host 2" className="host-img second-img
                         "/>
                         <div className="play-button">&#9658;</div>
                     </div>
@@ -91,7 +91,7 @@ const Help = () => {
                 <div className="editing-container container">
                     <div className="editing-image">
                         <div className="image-border">
-                            <img src="images/help-editing.png" alt="Editing" />
+                            <img src="src/assets/images/help-editing.png" alt="Editing" />
                         </div>
                     </div>
                     <div className="editing-content">
@@ -130,7 +130,7 @@ const Help = () => {
                     </div>
 
                     <div className="image-section">
-                        <img src="images/social media.png" alt="" />
+                        <img src="src/assets/images/social media.png" alt="" />
                     </div>
 
                 </div>

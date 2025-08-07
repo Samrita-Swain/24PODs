@@ -14,9 +14,9 @@ const About = () => {
                 <div className="about-container container">
                     <div className="image-section">
                         <div className="main-image-wrapper">
-                            <img src="images/about-1.jpg" alt="Main" className="main-image" />
-                            <img src="images/about-2.jpg" alt="Small1" className="small-image top-circle" />
-                            <img src="images/about-3.jpg" alt="Small2" className="small-image bottom-circle" />
+                            <img src="src/assets/images/about-1.jpg" alt="Main" className="main-image" />
+                            <img src="src/assets/images/about-2.jpg" alt="Small1" className="small-image top-circle" />
+                            <img src="src/assets/images/about-3.jpg" alt="Small2" className="small-image bottom-circle" />
                         </div>
                         <div className="experience-box">
                             <span className="years">30</span>
@@ -59,7 +59,7 @@ const About = () => {
                     </div>
 
                     <div className="image-section">
-                        <img src="images/about-third.png" alt="" />
+                        <img src="src/assets/images/about-third.png" alt="" />
                     </div>
 
                 </div>
@@ -74,7 +74,7 @@ const About = () => {
                     <div className="about-fourth-cards">
                             <div className="profile-card">
                                 <img
-                                    src="images/people.png"
+                                    src="src/assets/images/people.png"
                                     alt="Profile"
                                     className="profile-img"
                                 />
@@ -92,7 +92,7 @@ const About = () => {
                             </div>
                             <div className="profile-card">
                                 <img
-                                    src="images/people.png"
+                                    src="src/assets/images/people.png"
                                     alt="Profile"
                                     className="profile-img"
                                 />
@@ -110,7 +110,7 @@ const About = () => {
                             </div>
                             <div className="profile-card">
                                 <img
-                                    src="images/people.png"
+                                    src="src/assets/images/people.png"
                                     alt="Profile"
                                     className="profile-img"
                                 />
@@ -128,7 +128,7 @@ const About = () => {
                             </div>
                             <div className="profile-card">
                                 <img
-                                    src="images/people.png"
+                                    src="src/assets/images/people.png"
                                     alt="Profile"
                                     className="profile-img"
                                 />
