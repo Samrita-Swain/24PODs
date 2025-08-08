@@ -49,7 +49,7 @@ const About = () => {
                             Why Choose <span className="highlight">US?</span>
                         </h1>
                         <div className="paragraph">
-                            <div className="straight-line"></div>
+                            <div className="straight-line" style={{height: "148px"}}></div>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                                 the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
