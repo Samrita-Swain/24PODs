@@ -912,6 +912,9 @@ body {
   .about-third-section .straight-line {
     height: 175px;
   }
+  .help-third .straight-line {
+        height: 143px !important;
+    }
 
   .about-third-section .text-section {
     margin-bottom: 25px;
@@ -1446,7 +1449,7 @@ body {
 /* Mobile Devices (max-width: 600px) */
 @media (max-width: 600px) {
   .help-third-boxes .box .straight-line {
-    height: 177px;
+    height: 143px !important;
   }
 
   .help-fourth {
@@ -1678,6 +1681,7 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  
   .guest-second-section {
     flex-direction: column;
     /* padding: 40px; */
@@ -1700,6 +1704,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .section-container {
+    padding: 30px 20px;
+}
 
   .our-guest-first,
   .our-guest-first::before {
