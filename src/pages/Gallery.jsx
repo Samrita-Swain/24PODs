@@ -14,6 +14,7 @@ const galleryItems = [
 
 const Gallery = () => {
     const [activeTab, setActiveTab] = useState('All');
+    const [selectedImage, setSelectedImage] = useState(null);
 
     const filteredItems =
         activeTab === 'All'
@@ -23,13 +24,17 @@ const Gallery = () => {
                     item.category.trim().toLowerCase() ===
                     activeTab.trim().toLowerCase()
             );
+
     return (
         <div>
+            {/* Banner */}
             <div className="gallery-first">
                 <div className="content">
                     <h1>Gallery</h1>
                 </div>
             </div>
+
+            {/* Tabs */}
             <div className="gallery-wrapper">
                 <div className="tabs">
                     {tabs.map((tab, index) => (
@@ -43,23 +48,40 @@ const Gallery = () => {
                     ))}
                 </div>
 
+                {/* Gallery Grid */}
                 <div className="gallery-grid">
                     {filteredItems.map((item) => (
-                        <div key={item.id} className="gallery-item">
+                        <div
+                            key={item.id}
+                            className="gallery-item"
+                            onClick={() => setSelectedImage(item.src)}
+                            style={{ cursor: "pointer" }}
+                        >
                             <img src={item.src} alt={`Gallery ${item.id}`} />
                         </div>
                     ))}
                 </div>
             </div>
+
+            {/* Modal Lightbox */}
+            {selectedImage && (
+                <div className="lightbox-overlay" onClick={() => setSelectedImage(null)}>
+                    <div
+                        className="lightbox-content"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <button
+                            className="lightbox-close"
+                            onClick={() => setSelectedImage(null)}
+                        >
+                            ✕
+                        </button>
+                        <img src={selectedImage} alt="Enlarged view" />
+                    </div>
+                </div>
+            )}
         </div>
-    )
-}
+    );
+};
 
-export default Gallery
-
-
-
-
-
-
-
+export default Gallery;

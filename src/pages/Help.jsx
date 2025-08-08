@@ -46,7 +46,7 @@ const Help = () => {
             </div>
             </div>
             <div className="help_third">
-                <div className="help_third container">
+                <div className="help_third">
                 <div className="help-third-section">
                     <div className="text-section">
                     <h1>
@@ -57,7 +57,7 @@ const Help = () => {
                     <div className="box">
                         <h1>Editing</h1>
                         <div className="paragraph">
-                            <div className="straight-line" style={{ height: "155px" }}></div>
+                            <div className="straight-line"></div>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                                 the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
@@ -78,7 +78,7 @@ const Help = () => {
                     <div className="box">
                         <h1>Editing</h1>
                         <div className="paragraph">
-                            <div className="straight-line" style={{ height: "155px" }}></div>
+                            <div className="straight-line"></div>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                                 the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
