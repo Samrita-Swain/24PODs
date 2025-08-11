@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
   margin: 0;
   padding: 0;
 }
 
-body {
+/* body {
   font-family: "Poppins", sans-serif;
+} */
+h1,h5{
+  font-family: "Jost", sans-serif;
+}
+p{
+  font-family: "Manrope", sans-serif;
 }
 
 .container {
@@ -81,6 +87,7 @@ body {
 /* === Join Us Button === */
 .button {
   background: #9f0101;
+  font-family: "Open Sans", sans-serif;
   padding: 10px 20px;
   border-radius: 25px;
   text-align: center;
@@ -327,7 +334,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000d4;
+  background-color: #261542cf;
   z-index: 1;
 }
 
@@ -472,7 +479,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: #2615429c;
   /* overlay */
   z-index: 1;
   height: 60vh;
@@ -1209,7 +1217,7 @@ body {
 .help-third-boxes .box .straight-line {
   position: absolute;
   width: 2px;
-  height: 145px;
+  height: 118px;
   background: #9f0101;
 }
 
