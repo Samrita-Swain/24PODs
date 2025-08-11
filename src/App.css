@@ -620,6 +620,9 @@ body {
 }
 
 .text-section .highlight {
+  color: #660033;
+}
+.about-third .text-section .highlight {
   color: #e0afff;
 }
 
