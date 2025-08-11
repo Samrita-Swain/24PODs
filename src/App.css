@@ -620,7 +620,7 @@ body {
 }
 
 .text-section .highlight {
-  color: #660033;
+  color: #e0afff;
 }
 
 .text-section p {
@@ -705,7 +705,7 @@ body {
   height: 130px;
   width: 2px;
   align-self: stretch;
-  background: #9f0101;
+  background: #660033;
 }
 
 
@@ -1238,7 +1238,7 @@ body {
   position: absolute;
   width: 2px;
   height: 118px;
-  background: #9f0101;
+  background: #660033;
 }
 
 .help-third-boxes .second-box {
