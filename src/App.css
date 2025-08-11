@@ -13,6 +13,7 @@ h1,h5{
 }
 p{
   font-family: "Manrope", sans-serif;
+  font-weight: 500 !important;
 }
 
 .container {
@@ -69,7 +70,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 10px 40px;
-  background-color: #fff;
+  background-color: #1d1033;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
 }
@@ -82,29 +83,36 @@ body {
 .logo img {
   width: 100%;
   height: auto;
+  min-width: 160px;
 }
 
 /* === Join Us Button === */
 .button {
-  background: #9f0101;
+  background: #660033;
+  font-weight: 600;
   font-family: "Open Sans", sans-serif;
   padding: 10px 20px;
   border-radius: 25px;
   text-align: center;
   color: #fff;
   font-size: 14px;
-  border: 1px solid #9f0101;
+  border: 1px solid #660033;
   transition: 0.5s;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: #000;
+  background-color: #e0afff;
+  border: 1px solid #e0afff;
+  color: #000;
 }
 
 .button a {
   color: #fff;
   text-decoration: none;
+}
+.button:hover a{
+  color: #000;
 }
 
 /* === Header Right Section === */
@@ -120,6 +128,7 @@ body {
 .Hamburger {
   border: none;
   background: transparent;
+  color: #fff;
   cursor: pointer;
   transition: 0.5s;
   font-size: 20px;
@@ -128,11 +137,11 @@ body {
 /* === Fullscreen Menu === */
 .openmenu {
   position: fixed;
-  top: 60px;
+  top: 88px;
   left: 0;
   width: 100vw;
   height: 90vh;
-  background: #fff;
+  background: #1d1033;
   z-index: 999;
   display: flex;
   flex-direction: column;
@@ -153,14 +162,14 @@ body {
 
 .menu a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-size: 16px;
   font-weight: 500;
   transition: 0.5s;
 }
 
 .menu a:hover {
-  color: #9f0101;
+  color: #ad0459;
 }
 
 /* === Menu Button === */
@@ -178,12 +187,12 @@ body {
 }
 
 .social-icons a {
-  color: #000 !important;
+  color: #fff !important;
   transition: 0.5s;
 }
 
 .social-icons a:hover {
-  color: #9f0101 !important;
+  color: #ad0459 !important;
 }
 
 /* === Responsive Tweaks === */
@@ -283,11 +292,17 @@ body {
 }
 
 .footer-bottom {
-  background-color: #000;
+  background-color: #1d1033;
   color: white;
   text-align: center;
   padding: 6px 0;
   font-size: 13px;
+}
+.footer-bottom a{
+  transition: 0.5s;
+}
+.footer-bottom a:hover{
+  color: #ff1b1b !important;
 }
 
 /* Responsive tweaks (optional) */
@@ -334,7 +349,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #261542cf;
+  background-color: #261542b3;
   z-index: 1;
 }
 
@@ -361,7 +376,7 @@ body {
 }
 
 .home-content span {
-  color: #9f0101;
+  color: #660033;
 }
 
 /* === Button === */
@@ -373,24 +388,25 @@ body {
   justify-content: center;
   cursor: pointer;
   gap: 0.2rem;
-  background-color: #9f0101;
+  /* background-color: #9f0101; */
   color: #fff;
   padding: 10px 16px;
   border: none;
   border-radius: 25px;
   margin-top: 20px;
   font-size: 16px;
-  transition: background 0.3s ease;
+  transition: 0.5s;
 }
 
-.home-button:hover {
+/* .home-button:hover {
   background-color: #000;
-}
+} */
 
 .home-icon {
   font-size: 20px;
   transform: translateX(0);
   transition: transform 0.5s ease;
+  margin-top: 4px;
 }
 
 .home-button:hover .home-icon {
@@ -560,7 +576,7 @@ body {
   position: absolute;
   bottom: 55px;
   left: 20px;
-  background-color: #9f0101;
+  background-color: #660033;
   color: white;
   padding: 15px 25px;
   border-radius: 10px;
@@ -604,7 +620,7 @@ body {
 }
 
 .text-section .highlight {
-  color: #9f0101;
+  color: #660033;
 }
 
 .text-section p {
@@ -652,7 +668,7 @@ body {
 
 
 .about-third-section {
-  background: #000;
+  /* background: #261542; */
   position: relative;
 }
 
@@ -742,7 +758,7 @@ body {
   position: absolute;
   top: 0px;
   right: 0px;
-  background: #9f0101;
+  background: #660033;
   display: flex;
   flex-direction: column;
   padding: 15px 15px;
@@ -752,6 +768,10 @@ body {
 .about-social-icons a {
   color: #fff;
   font-size: 18px;
+  transition: 0.5s;
+}
+.about-social-icons a:hover{
+    color: #ddabfa;
 }
 
 /* .social-icons a {
@@ -967,7 +987,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #2615429c;
   /* overlay */
   z-index: 1;
   height: 60vh;
@@ -1154,7 +1174,7 @@ body {
 }
 
 .help_third {
-  background-color: #000;
+  background-color: #261542;
   padding: 50px 20px;
   display: flex;
   justify-content: center;
@@ -1590,7 +1610,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color:#2615429c;
   z-index: 1;
   height: 60vh;
 }
@@ -1680,8 +1700,8 @@ body {
 
 .guest-third h5 {
   margin: 0;
-  font-size: 17px;
-  color: #9f0101;
+  font-size: 20px;
+  color: #660033;
 }
 
 .guest-third .home-button {
@@ -1772,7 +1792,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #2615429c;
   /* overlay */
   z-index: 1;
   height: 60vh;
@@ -1805,8 +1825,8 @@ body {
 }
 
 .section-title .highlight {
-  color: #9d002c;
-  border-bottom: 2px solid #9d002c;
+  color: #660033;
+  border-bottom: 2px solid #660033;
   padding-bottom: 2px;
 }
 
@@ -1818,7 +1838,7 @@ body {
 }
 
 .slick-dots li button:before {
-  color: #9d002c;
+  color: #660033;
 }
 
 /* Testimonial Card */
@@ -1898,7 +1918,7 @@ body {
 }
 
 .testimonial-title .highlight {
-  color: #9d002c;
+  color: #660033;
 }
 
 .testimonial-swiper {
@@ -1945,11 +1965,11 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-  background: #9d002c !important;
+  background: #660033 !important;
 }
 
 .swiper-pagination-bullet {
-  background: #9d002c !important;
+  background: #660033 !important;
 }
 
 .swiper-wrapper {
@@ -1961,7 +1981,7 @@ body {
 
 /* MemberForm */
 .form-container {
-  background-color: #000;
+  background-color: #261542;
   padding: 60px 70px;
   margin: auto;
   color: #fff;
@@ -1978,7 +1998,7 @@ body {
 }
 
 .highlight {
-  color: #9d002c;
+  color: #660033;
   padding-bottom: 3px;
 }
 
@@ -2008,13 +2028,13 @@ body {
 }
 
 .memberform .input-group label span {
-  color: #9d002c;
+  color: #660033;
 }
 
 .memberform .input-group input,
 .input-group textarea {
   padding: 10px 15px;
-  border: 1px solid #9d002c;
+  border: 1px solid #660033;
   border-radius: 8px;
   background-color: transparent;
   color: #fff;
@@ -2076,7 +2096,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #2615429c;
   /* overlay */
   z-index: 1;
   height: 60vh;
@@ -2117,10 +2137,10 @@ body {
 
 .tab-button {
   padding: 8px 20px;
-  border: 1px solid #9d002c;
+  border: 1px solid #660033;
   border-radius: 20px;
   background-color: transparent;
-  color: #9d002c;
+  color: #660033;
   font-weight: 500;
   cursor: pointer;
   transition: 0.5s;
@@ -2129,7 +2149,7 @@ body {
 
 .tab-button.active,
 .tab-button:hover {
-  background-color: #9d002c;
+  background-color: #660033;
   color: white;
 }
 
@@ -2143,10 +2163,10 @@ body {
 
 .tab-button {
   padding: 8px 20px;
-  border: 1px solid #9d002c;
+  border: 1px solid #660033;
   border-radius: 20px;
   background-color: transparent;
-  color: #9d002c;
+  color: #660033;
   font-weight: 500;
   cursor: pointer;
   transition: 0.5s;
@@ -2155,7 +2175,7 @@ body {
 
 .tab-button.active,
 .tab-button:hover {
-  background-color: #9d002c;
+  background-color: #660033;
   color: white;
 }
 
@@ -2293,7 +2313,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #2615429c;
   /* overlay */
   z-index: 1;
   height: 60vh;
@@ -2325,10 +2345,11 @@ body {
 }
 
 .form-group label {
-  font-size: 14px;
-  margin-bottom: 6px;
-  font-weight: 500;
-  color: #333;
+    font-size: 16px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #000;
+    font-family: Open sans-serif;
 }
 
 .form-group label span {
@@ -2395,7 +2416,7 @@ textarea {
 
 .info-item .icon {
   font-size: 20px;
-  color: #b31830;
+  color: #660033;
   background-color: #fff;
   padding: 15px;
   border-radius: 50%;
@@ -2432,10 +2453,10 @@ textarea {
 
 .tab {
   padding: 8px 20px;
-  border: 1px solid #9d002c;
+  border: 1px solid #660033;
   border-radius: 20px;
   background-color: transparent;
-  color: #9d002c;
+  color: #660033;
   font-weight: 500;
   cursor: pointer;
   transition: 0.5s;
@@ -2444,7 +2465,7 @@ textarea {
 
 .tab.active,
 .tab:hover {
-  background-color: #9d002c;
+  background-color: #660033;
   color: white;
 }
 
@@ -2509,8 +2530,8 @@ textarea {
 .cancel-btn {
   margin-top: 20px;
   padding: 10px 20px;
-  background: #9d002c;
-  border: 1px solid #9d002c !important;
+  background: #660033;
+  border: 1px solid #660033 !important;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
@@ -2521,7 +2542,7 @@ textarea {
 
 .cancel-btn:hover {
   background: #000;
-  border: 1px solid #9d002c;
+  border: 1px solid #660033;
 
 }
 
@@ -2613,7 +2634,7 @@ textarea {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #2615429c;
   /* overlay */
   z-index: 1;
   height: 60vh;
@@ -2711,7 +2732,7 @@ textarea {
 .about-third {
   display: flex;
   justify-content: center;
-  background: #000;
+  background: #261542;
   padding: 60px 80px;
 }
 
@@ -2723,7 +2744,7 @@ textarea {
 
 .tab-item.active,
 .tab-item:hover {
-  border: 1px solid #9d002c;
+  border: 1px solid #660033;
   background-color: #fef4f8;
 }
 
@@ -2872,7 +2893,7 @@ textarea {
   right: 30px;
   width: 30px;
   height: 30px;
-  background-color: #9d002c;
+  background-color: #660033;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -2892,3 +2913,7 @@ textarea {
   transform: scale(1.1);
 }
 
+
+iframe {
+    height: 200px;
+}

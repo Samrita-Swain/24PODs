@@ -11,7 +11,19 @@ const Footer = () => {
         <a href="/contact_us">Contact us</a>
       </div>
       <div className="footer-bottom">
-        <p>Copywrite@2025</p>
+        <p>
+  © 2025 24PODS | All rights reserved | Developed by{" "}
+  <a
+    href="https://crushaderstech.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ color: "#fff", textDecoration: "none" }}
+  >
+    Crushaders Tech
+  </a>
+</p>
+
+
       </div>
     </footer>
   );

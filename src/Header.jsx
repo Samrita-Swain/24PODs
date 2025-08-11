@@ -12,7 +12,7 @@ const Header = () => {
 
             {/* Logo */}
             <div className="logo">
-                <a href="/"><img src="/images/demo-logo.png" alt="Logo" className="logo w-12 h-auto" /></a>
+                <a href="/"><img src="/images/24Pods-Logo_transparent.png" alt="Logo" className="logo w-12 h-auto" /></a>
             </div>
 
             {/* Right Section */}
@@ -47,9 +47,14 @@ const Header = () => {
                     </nav>
 
                     {/* Join Us Button inside the menu */}
-                    <button className="button menu-button mt-6">
-                        <a href="/contact_us">Join Us</a>
-                    </button>
+                    <a
+                        href="/contact_us"
+                        className="button menu-button mt-6"
+                        style={{ textDecoration: "none" }}
+                    >
+                        Join Us
+                    </a>
+
 
                     {/* Social Icons */}
                     <div className="social-icons">
