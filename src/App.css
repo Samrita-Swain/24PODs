@@ -483,12 +483,13 @@ body {
 
 /* about section */
 .about-first {
-  background-image: url(/images/about-banner.png);
-  height: 60vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+    background-image: url(/images/about-banner.png);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 96px;
 }
 
 .about-first::before {
@@ -502,7 +503,7 @@ body {
   background-color: #2615429c;
   /* overlay */
   z-index: 1;
-  height: 60vh;
+  height: 50vh;
 }
 
 .about-first .content {
@@ -1016,12 +1017,13 @@ body {
 
 /* How can we help */
 .help-first {
-  background-image: url(/images/help-banner.png);
-  height: 60vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+    background-image: url(/images/help-banner.png);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 96px;
 }
 
 .help-first::before {
@@ -1034,7 +1036,7 @@ body {
   background-color: #2615429c;
   /* overlay */
   z-index: 1;
-  height: 60vh;
+  height: 50vh;
 }
 
 .help-first .content {
@@ -1692,12 +1694,13 @@ body {
 
 /* Be our guest */
 .our-guest-first {
-  background-image: url(/images/be_our_guest_banner.png);
-  height: 60vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+    background-image: url(/images/be_our_guest_banner.png);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 96px;
 }
 
 .our-guest-first::before {
@@ -1709,7 +1712,7 @@ body {
   bottom: 0;
   background-color:#2615429c;
   z-index: 1;
-  height: 60vh;
+  height: 50vh;
 }
 
 .our-guest-first .content {
@@ -1876,12 +1879,13 @@ body {
 
 /* Become A member */
 .welcome-first {
-  background-image: url(/images/welcome-banner.png);
-  height: 60vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+    background-image: url(/images/welcome-banner.png);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 96px;
 }
 
 .welcome-first::before {
@@ -1894,7 +1898,7 @@ body {
   background-color: #2615429c;
   /* overlay */
   z-index: 1;
-  height: 60vh;
+  height: 50vh;
 }
 
 .welcome-first .content {
@@ -2181,11 +2185,12 @@ body {
 /* Gallery */
 .gallery-first {
   background-image: url(/images/gallery-banner.png);
-  height: 60vh;
+  height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  margin-top: 96px;
 }
 
 .gallery-first::before {
@@ -2198,7 +2203,7 @@ body {
   background-color: #2615429c;
   /* overlay */
   z-index: 1;
-  height: 60vh;
+  height: 50vh;
 }
 
 .gallery-first .content {
@@ -2298,13 +2303,13 @@ body {
   .guest-third {
     width: 100%;
 }
-  .gallery-first {
+  /* .gallery-first {
     height: 40vh;
   }
 
   .gallery-first::before {
     height: 40vh;
-  }
+  } */
 
   .gallery-first .content h1 {
     font-size: 24px;
@@ -2404,11 +2409,12 @@ body {
 /* Contact us */
 .contactus-first {
   background-image: url(/images/contactus-banner.png);
-  height: 60vh;
+  height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  margin-top: 96px;
 }
 
 .contactus-first::before {
@@ -2421,7 +2427,7 @@ body {
   background-color: #2615429c;
   /* overlay */
   z-index: 1;
-  height: 60vh;
+  height: 50vh;
 }
 
 .contactus-first .content {
@@ -2717,7 +2723,7 @@ textarea {
 
 .from-reality-first {
   background-image: url(/images/from-reality-banner.png) !important;
-  height: 60vh;
+  height: 50vh;
 }
 
 
@@ -2725,11 +2731,12 @@ textarea {
 /* Vblogs */
 .vblogs-first {
   background-image: url(/images/vblogs-banner.png);
-  height: 60vh;
+  height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  margin-top: 96px;
 }
 
 .vblogs-first::before {
@@ -2742,7 +2749,7 @@ textarea {
   background-color: #2615429c;
   /* overlay */
   z-index: 1;
-  height: 60vh;
+  height: 50vh;
 }
 
 .vblogs-first .content {
@@ -3123,4 +3130,29 @@ iframe {
 
 .welcome-first h1{
   text-align: center;
+}
+
+
+@media (max-width: 778px) {
+  .vblogs-first {
+    margin-top: 80px;
+}
+.about-first {
+    margin-top: 80px;
+}
+.help-first {
+    margin-top: 80px;
+}
+.our-guest-first {
+    margin-top: 80px;
+}
+.welcome-first {
+    margin-top: 80px;
+}
+.gallery-first {
+    margin-top: 80px;
+}
+.contactus-first {
+  margin-top: 80px;
+}
 }

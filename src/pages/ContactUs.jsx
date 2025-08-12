@@ -12,6 +12,7 @@ const ContactUs = () => {
                 </div>
             </div>
             <div className="contact-wrapper">
+              {/* <p>Book your free strategy call today and see how we can take your idea from concept to clicks.”</p> */}
                 <ContactUsForm />
                 <div className="contact-info">
         <div className="info-item">
