@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const tabs = ['All', 'Lorem Ipsum', 'Lorem Ipsum 2', 'Lorem Ipsum 3'];
 
@@ -13,6 +15,14 @@ const galleryItems = [
 ];
 
 const Gallery = () => {
+    useEffect(() => {
+            AOS.init({
+                duration: 1000,
+                once: false,
+                mirror: true
+            });
+        }, []);
+        
     const [activeTab, setActiveTab] = useState('All');
     const [selectedImage, setSelectedImage] = useState(null);
 
@@ -35,7 +45,7 @@ const Gallery = () => {
             </div>
 
             {/* Tabs */}
-            <div className="gallery-wrapper">
+            <div className="gallery-wrapper" data-aos="zoom-in">
                 <div className="tabs">
                     {tabs.map((tab, index) => (
                         <button

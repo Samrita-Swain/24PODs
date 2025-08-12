@@ -23,10 +23,10 @@ export const MemberForm = () => {
 
   return (
     <div className="form-container memberform">
-      <div className="text-section">
+      <div className="text-section" data-aos="flip-up">
       <img src="images/join-us.png" alt="" />
       </div>
-      <form ref={form} onSubmit={sendEmail} className="member-form">
+      <form ref={form} onSubmit={sendEmail} className="member-form" data-aos="zoom-in-left">
         <div className="row">
           <div className="input-group">
             <label>Full Name<span>*</span></label>

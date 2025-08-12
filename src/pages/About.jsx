@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import { FaXTwitter, FaInstagram, FaMobileScreenButton } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { CiMicrophoneOn } from "react-icons/ci";
@@ -7,6 +9,14 @@ import { ImMobile2 } from "react-icons/im";
 import { FaMicrophoneAlt } from "react-icons/fa";
 
 const About = () => {
+   useEffect(() => {
+    AOS.init({
+        duration: 1000,
+        once: false,
+        mirror: true
+    });
+}, []);
+    
     return (
         <div>
             <div className="about-first">
@@ -16,19 +26,20 @@ const About = () => {
             </div>
             <div className="about-second">
                 <div className="about-container container">
+                    <img src="/images/white-bg.png" alt="" className='about-second-section-img' data-aos="zoom-in"/>
                     <div className="image-section">
                         <div className="main-image-wrapper">
                             <img src="/images/about-1.jpg" alt="Main" className="main-image" />
-                            <img src="/images/about-2.jpg" alt="Small1" className="small-image top-circle" />
-                            <img src="/images/about-3.jpg" alt="Small2" className="small-image bottom-circle" />
+                            <img src="/images/about-2.jpg" alt="Small1" className="small-image top-circle" data-aos="zoom-in"/>
+                            <img src="/images/about-3.jpg" alt="Small2" className="small-image bottom-circle" data-aos="zoom-in"/>
                         </div>
-                        <div className="experience-box">
+                        <div className="experience-box" data-aos="fade-right">
                             <span className="years">30</span>
                             <span className="exp-text">Years Of <br />Experience</span>
                         </div>
                     </div>
 
-                    <div className="about-second-text-section" style={{marginBottom:"0"}}>
+                    <div className="about-second-text-section" style={{marginBottom:"0", position:"relative"}} data-aos="fade-left">
                         <h5>About Us</h5>
                         <h1>24 Pods — Turning <span className="highlight">Your Ideas into Must-Listen Podcasts</span></h1>
                         <p>
@@ -58,8 +69,7 @@ const About = () => {
             <div className="about-third">
                 <div className="about-container about-third-section container">
 
-
-                    <div className="text-section" style={{marginBottom:"0"}}>
+                    <div className="text-section" style={{marginBottom:"0"}} data-aos="fade-right">
                         <h1>
                             The Story Behind <span className="highlight">24 Pods</span>
                         </h1>
@@ -75,7 +85,7 @@ const About = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="image-section">
+                    <div className="image-section" data-aos="fade-left">
                         <img src="/images/about-third.png" alt="" />
                     </div>
 
@@ -110,16 +120,16 @@ const About = () => {
                                 Most creators get stuck in the grind:
                             </p>
                             <ul>
-                                <li><span><FaMicrophoneAlt /></span> Recording is fun… but editing is exhausting.
+                                <li data-aos="fade-right"><span><FaMicrophoneAlt /></span> Recording is fun… but editing is exhausting.
                                 </li>
-                                <li><span><ImMobile2 /></span>Posting once is easy… but building a following takes daily effort.</li>
-                                <li style={{marginBottom:"0"}}><span><HiOutlineSpeakerphone /></span> Ads can get reach… but if the story doesn’t hook, no one sticks.
+                                <li data-aos="fade-right"><span><ImMobile2 /></span>Posting once is easy… but building a following takes daily effort.</li>
+                                <li style={{marginBottom:"0"}} data-aos="fade-right"><span><HiOutlineSpeakerphone /></span> Ads can get reach… but if the story doesn’t hook, no one sticks.
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <div className="image-section">
+                    <div className="image-section" data-aos="zoom-in">
                         <img src="/images/gif-podcast.gif" alt="" />
                     </div>
 
@@ -135,7 +145,7 @@ const About = () => {
                         </h1>
                     </div>
                     <div className="about-fourth-cards">
-                        <div className="profile-card">
+                        <div className="profile-card" data-aos="zoom-in">
                             <img
                                 src="/images/people.png"
                                 alt="Profile"
@@ -153,7 +163,7 @@ const About = () => {
                                 <p>Consultant</p>
                             </div>
                         </div>
-                        <div className="profile-card">
+                        <div className="profile-card" data-aos="zoom-in">
                             <img
                                 src="/images/people.png"
                                 alt="Profile"
@@ -171,7 +181,7 @@ const About = () => {
                                 <p>Consultant</p>
                             </div>
                         </div>
-                        <div className="profile-card">
+                        <div className="profile-card" data-aos="zoom-in">
                             <img
                                 src="/images/people.png"
                                 alt="Profile"
@@ -189,7 +199,7 @@ const About = () => {
                                 <p>Consultant</p>
                             </div>
                         </div>
-                        <div className="profile-card">
+                        <div className="profile-card" data-aos="zoom-in">
                             <img
                                 src="/images/people.png"
                                 alt="Profile"

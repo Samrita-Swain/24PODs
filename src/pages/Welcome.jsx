@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import { MemberForm } from './form/MemberForm';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -28,6 +30,13 @@ const testimonials = [
 ];
 
 const Welcome = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: false,
+            mirror: true
+        });
+    }, []);
     return (
         <div>
             <div className="welcome-first">
@@ -38,7 +47,7 @@ const Welcome = () => {
             <div className="about-third">
                 <div className="about-container about-third-section">
 
-                    <div className="text-section">
+                    <div className="text-section" data-aos="zoom-in-right" style={{marginBottom:"0"}}>
                         <h1>
                             Why Choose <span className="highlight">US?</span>
                         </h1>
@@ -50,12 +59,12 @@ const Welcome = () => {
                                 of type and scrambled it to make a type specimen book.
                             </p>
                         </div>
-                        <button className="button menu-button mt-6 help-button">
+                        <button className="button menu-button mt-6 help-button" style={{marginBottom:"0"}}>
                             <a href="/contact_us">Join Us</a>
                         </button>
                     </div>
 
-                    <div className="image-section">
+                    <div className="image-section" data-aos="zoom-in-left">
                         <img src="/images/about-third.png" alt="" />
                     </div>
 

@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const services = [
     { name: "Studio", icon: "/images/studio.png", content: " Professional, fully equipped, and ready to make you look & sound your best." },
@@ -10,6 +12,13 @@ const services = [
 
 
 const Help = () => {
+    useEffect(() => {
+            AOS.init({
+                duration: 1000,
+                once: false,
+                mirror: true
+            });
+        }, []);
     return (
         <div>
             <div className="help-first">
@@ -41,7 +50,7 @@ const Help = () => {
                     </div>
                 </div>
 
-                <div className="right-content">
+                <div className="right-content" data-aos="zoom-out">
                     <div className="image-stack">
                         <img src="/images/1st-img.jpg" alt="Host 1" className="host-img" />
                         <img src="/images/2nd-img.jpg" alt="Host 2" className="host-img second-img" />
@@ -58,7 +67,7 @@ const Help = () => {
                             </h1>
                         </div>
                         <div className="help-third-boxes">
-                            <div className="box">
+                            <div className="box" data-aos="zoom-in-right">
                                 <h1>Editing</h1>
                                 <div className="paragraph">
                                     <div className="straight-line"></div>
@@ -68,7 +77,7 @@ const Help = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="box second-box">
+                            <div className="box second-box" data-aos="zoom-in-down">
                                 <h1>Social Media</h1>
                                 <div className="paragraph">
                                     <p>
@@ -77,7 +86,7 @@ const Help = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="box">
+                            <div className="box" data-aos="zoom-in-left">
                                 <h1>Ads </h1>
                                 <div className="paragraph">
                                     <div className="straight-line"></div>
@@ -93,12 +102,12 @@ const Help = () => {
             </div>
             <div className="help-fourth">
                 <div className="editing-container container">
-                    <div className="editing-image">
+                    <div className="editing-image" data-aos="zoom-in-right">
                         <div className="image-border">
                             <img src="/images/help-editing.png" alt="Editing" />
                         </div>
                     </div>
-                    <div className="editing-content">
+                    <div className="editing-content" data-aos="zoom-in-left">
                         <h5>Editing</h5>
                         <h1 className="subheading">we edit and you manage</h1>
                         <p>
@@ -115,7 +124,7 @@ const Help = () => {
                     </div>
                 </div>
             </div>
-            <div className="help-fifth about-third">
+            {/* <div className="help-fifth about-third">
                 <div className="about-container about-third-section container">
                     <div className="editing-content">
                         <h5>Podcast marketing</h5>
@@ -138,7 +147,7 @@ const Help = () => {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import { IoMegaphoneSharp } from "react-icons/io5";
 
 const services = [
@@ -11,6 +13,13 @@ const services = [
 
 
 const Help = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: false,
+            mirror: true
+        });
+    }, []);
     return (
         <div>
             <div className="our-guest-first">
@@ -26,11 +35,11 @@ const Help = () => {
                         <p className="subheading">Whether you want to tell your story or learn from others, we’ve got you covered.</p>
                         </div>
                         <div className="guest-second-boxes">
-                            <div className="first-box">
+                            <div className="first-box" data-aos="fade-right">
                                 <h1> Your Consultant for Guest Spots</h1>
                                 <p>We help you find the right podcasts to share your voice, connect with the right audiences, and grow your influence. From research to introductions, we handle the legwork so you can focus on showing up and shining.</p>
                             </div>
-                            <div className="second-box">
+                            <div className="second-box" data-aos="fade-left">
                                 <h1> Join Us on Inspire from Reality</h1>
                                 <p>Our own podcast, hosted by Alaka, is where raw truth meets real stories. No filters. No sugar-coating. Just conversations that matter.</p>
                             </div>
@@ -62,11 +71,11 @@ const Help = () => {
             <div className="help-fourth">
                 <div className="editing-container container">
                     <div className="editing-image">
-                        <div className="image-border">
+                        <div className="image-border" data-aos="flip-left">
                             <img src="/images/help-editing.png" alt="Editing" />
                         </div>
                     </div>
-                    <div className="editing-content">
+                    <div className="editing-content" data-aos="zoom-in-left">
                         {/* <h5>Editing</h5> */}
                         <h1 className="subheading">Why Inspire from Reality?</h1>
                         <p>
