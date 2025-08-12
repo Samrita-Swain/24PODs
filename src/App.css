@@ -2825,7 +2825,7 @@ textarea {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: 0.3s ease;
   border: 1px solid #fff;
-  min-height: 90px;
+  min-height: 76px;
 }
 
 .tab-item img {
@@ -3134,6 +3134,10 @@ iframe {
 
 
 @media (max-width: 778px) {
+  .contact-wrapper {
+    gap: 0px;
+    padding: 20px;
+}
   .vblogs-first {
     margin-top: 80px;
 }
