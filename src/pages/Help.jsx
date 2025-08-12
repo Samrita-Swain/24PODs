@@ -1,11 +1,11 @@
 import React from 'react'
 
 const services = [
-    { name: "Studio", icon: "/images/studio.png" },
-    { name: "Shoot", icon: "/images/shoot.png" },
-    { name: "Editing", icon: "/images/video-editing.png" },
-    { name: "Ads", icon: "/images/ads.png" },
-    { name: "Marketing", icon: "/images/marketing.png" },
+    { name: "Studio", icon: "/images/studio.png", content: " Professional, fully equipped, and ready to make you look & sound your best." },
+    { name: "Shoot", icon: "/images/shoot.png", content: "High-quality recording with the right angles, lighting, and sound." },
+    { name: "Editing", icon: "/images/video-editing.png", content: "Crisp, polished, and on-brand." },
+    { name: "Ads", icon: "/images/ads.png", content: " Campaigns that get your content seen by the right people." },
+    { name: "Marketing", icon: "/images/marketing.png", content: " Distribution strategies that grow your audience and authority." },
 ];
 
 
@@ -17,19 +17,25 @@ const Help = () => {
                     <h1>How Can we Help</h1>
                 </div>
             </div>
-            <div className="help-second">
-                <div className="help-second section-container">
-                <div className="help-second left-content">
+            <div className="help-second section-container">
+                <div className="left-content">
                     <div className="text-section">
                         <h1>
                             All that you <span className="highlight">need</span>
                         </h1>
+                        <p>From the first click of the camera to your audience hitting “play,” we handle it all.</p>
                     </div>
+
                     <div className="service-grid">
                         {services.map((service) => (
                             <div className="service-box" key={service.name}>
-                                <img src={service.icon} alt={service.name} />
-                                <p>{service.name}</p>
+                                <div className="service-front">
+                                    <img src={service.icon} alt={service.name} />
+                                    <p>{service.name}</p>
+                                </div>
+                                <div className="service-back">
+                                    <p>{service.content}</p>
+                                </div>
                             </div>
                         ))}
                     </div>
@@ -38,58 +44,52 @@ const Help = () => {
                 <div className="right-content">
                     <div className="image-stack">
                         <img src="/images/1st-img.jpg" alt="Host 1" className="host-img" />
-                        <img src="/images/2nd-img.jpg" alt="Host 2" className="host-img second-img
-                        "/>
+                        <img src="/images/2nd-img.jpg" alt="Host 2" className="host-img second-img" />
                         <div className="play-button">&#9658;</div>
                     </div>
                 </div>
             </div>
-            </div>
             <div className="help_third">
                 <div className="help_third">
-                <div className="help-third-section">
-                    <div className="text-section">
-                    <h1>
-                        Post Production
-                    </h1>
-                </div>
-                <div className="help-third-boxes">
-                    <div className="box">
-                        <h1>Editing</h1>
-                        <div className="paragraph">
-                            <div className="straight-line"></div>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen book.
-                            </p>
+                    <div className="help-third-section">
+                        <div className="text-section">
+                            <h1>
+                                Post Production
+                            </h1>
                         </div>
-                    </div>
-                    <div className="box second-box">
-                        <h1>Editing</h1>
-                        <div className="paragraph">
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen book.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <h1>Editing</h1>
-                        <div className="paragraph">
-                            <div className="straight-line"></div>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen book.
-                            </p>
-                        </div>
-                    </div>
+                        <div className="help-third-boxes">
+                            <div className="box">
+                                <h1>Editing</h1>
+                                <div className="paragraph">
+                                    <div className="straight-line"></div>
+                                    <p>
+                                       Most videos lose viewers in the first 10 seconds. We keep them watching with sharp cuts, clean audio, and visuals that feel premium from start to finish—so your content holds attention, not dust.
 
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="box second-box">
+                                <h1>Social Media</h1>
+                                <div className="paragraph">
+                                    <p>
+                                       Good content is wasted if it never reaches the right eyes. We tailor reels, captions, thumbnails, and hashtags for each platform, turning casual scrollers into engaged followers and loyal listeners.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="box">
+                                <h1>Ads </h1>
+                                <div className="paragraph">
+                                    <div className="straight-line"></div>
+                                    <p>
+                                        Throwing money at ads without strategy is a fast way to get nothing back. We create campaigns built for your audience, delivering attention that translates into clicks, conversations, and conversions.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
             </div>
             <div className="help-fourth">
                 <div className="editing-container container">
@@ -115,7 +115,7 @@ const Help = () => {
                     </div>
                 </div>
             </div>
-             <div className="help-fifth about-third">
+            <div className="help-fifth about-third">
                 <div className="about-container about-third-section container">
                     <div className="editing-content">
                         <h5>Podcast marketing</h5>
@@ -129,7 +129,7 @@ const Help = () => {
                             remaining essentially unchanged.
                         </p>
                         <button className="button menu-button mt-6 help-button">
-                           <a href="/contact_us">Join Us</a>
+                            <a href="/contact_us">Join Us</a>
                         </button>
                     </div>
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { IoMegaphoneSharp } from "react-icons/io5";
 
 const services = [
     { name: "Studio", icon: "/images/studio.png" },
@@ -20,24 +21,28 @@ const Help = () => {
             <div className="about-third guest-second">
                 <div className="about-container guest-second-section container">
                    <div className="editing-content">
-                        <h5>Lorem Ipsum</h5>
-                        <h1 className="subheading">Lorem Ipsum is simply dummy text</h1>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text ever
-                            since the 1500s, when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has survived not only
-                            five centuries, but also the leap into electronic typesetting,
-                            remaining essentially unchanged.
-                        </p>
-                        <button className="button menu-button mt-6 help-button">
+                        <div className="heading" style={{textAlign:"center"}}>
+                            <h5>Lorem Ipsum</h5>
+                        <p className="subheading">Whether you want to tell your story or learn from others, we’ve got you covered.</p>
+                        </div>
+                        <div className="guest-second-boxes">
+                            <div className="first-box">
+                                <h1> Your Consultant for Guest Spots</h1>
+                                <p>We help you find the right podcasts to share your voice, connect with the right audiences, and grow your influence. From research to introductions, we handle the legwork so you can focus on showing up and shining.</p>
+                            </div>
+                            <div className="second-box">
+                                <h1> Join Us on Inspire from Reality</h1>
+                                <p>Our own podcast, hosted by Alaka, is where raw truth meets real stories. No filters. No sugar-coating. Just conversations that matter.</p>
+                            </div>
+                        </div>
+                        {/* <button className="button menu-button mt-6 help-button">
                            <a href="/contact_us">Join Us</a>
-                        </button>
+                        </button> */}
                     </div>
 
-                    <div className="image-section">
+                    {/* <div className="image-section">
                         <img src="/images/guest-img.png" alt="" />
-                    </div>
+                    </div> */}
 
                 </div>
             </div>
@@ -62,23 +67,22 @@ const Help = () => {
                         </div>
                     </div>
                     <div className="editing-content">
-                        <h5>Editing</h5>
-                        <h1 className="subheading">we edit and you manage</h1>
+                        {/* <h5>Editing</h5> */}
+                        <h1 className="subheading">Why Inspire from Reality?</h1>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text ever
-                            since the 1500s, when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has survived not only
-                            five centuries, but also the leap into electronic typesetting,
-                            remaining essentially unchanged.
+                            Alaka, our founder, believes you don’t need to fit in—you’re meant to stand out. Every person carries a unique set of traits shaped by the paths they’ve walked. That’s reality. That’s the naked truth. And somewhere out there, someone needs to hear your journey to find the courage for their own.
                         </p>
+                        <div className="messages">
+                            <img src="/images/message-gif.gif" alt="" />
+                            <p>If your story can spark a change, let’s share it.</p>
+                        </div>
                         <button className="button menu-button mt-6 help-button">
                             <a href="/contact_us">Join Us</a>
                         </button>
                     </div>
                 </div>
             </div>
-             <div className="about-third">
+             {/* <div className="about-third">
                 <div className="about-container about-third-section container">
                    
                     <div className="text-section">
@@ -103,7 +107,7 @@ const Help = () => {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

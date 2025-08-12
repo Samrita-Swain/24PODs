@@ -6,8 +6,9 @@ const ContactUs = () => {
     return (
         <div>
             <div className="contactus-first">
-                <div className="content">
-                    <h1>Contact us</h1>
+                <div className="content" style={{textAlign:"center"}}>
+                    <h1 style={{marginBottom:"0"}}>Contact us</h1>
+                    <p>Your content shouldn’t just exist—it should connect, convert, and create impact. Let’s make it happen.</p>
                 </div>
             </div>
             <div className="contact-wrapper">
