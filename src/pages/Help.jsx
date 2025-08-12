@@ -109,7 +109,7 @@ const Help = () => {
                             five centuries, but also the leap into electronic typesetting,
                             remaining essentially unchanged.
                         </p>
-                        <button className="button menu-button mt-6 help-button">
+                        <button className="button menu-button mt-6 help-button" style={{marginBottom:"0"}}>
                             <a href="/contact_us">Join Us</a>
                         </button>
                     </div>
@@ -128,7 +128,7 @@ const Help = () => {
                             five centuries, but also the leap into electronic typesetting,
                             remaining essentially unchanged.
                         </p>
-                        <button className="button menu-button mt-6 help-button">
+                        <button className="button menu-button mt-6 help-button" style={{marginBottom:"0"}}>
                             <a href="/contact_us">Join Us</a>
                         </button>
                     </div>

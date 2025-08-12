@@ -28,7 +28,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className="about-second-text-section">
+                    <div className="about-second-text-section" style={{marginBottom:"0"}}>
                         <h5>About Us</h5>
                         <h1>24 Pods — Turning <span className="highlight">Your Ideas into Must-Listen Podcasts</span></h1>
                         <p>
@@ -59,13 +59,13 @@ const About = () => {
                 <div className="about-container about-third-section container">
 
 
-                    <div className="text-section">
+                    <div className="text-section" style={{marginBottom:"0"}}>
                         <h1>
                             The Story Behind <span className="highlight">24 Pods</span>
                         </h1>
                         <div className="paragraph">
 
-                            <p>
+                            <p style={{marginBottom:'0'}}>
                                 The name? 24 comes from our founder Alka’s birth date. Pods is our shorthand for what we live and breathe — podcasts.<br></br>
                                 For over 10 years, Alka has been obsessed with how stories land. In branding, in campaigns, in content — she’s seen that the real magic doesn’t happen when you talk. It happens when you listen.<br></br>
 
@@ -100,7 +100,7 @@ const About = () => {
             <div className="about-third">
                 <div className="about-container about-third-section container">
 
-                    <div className="text-section">
+                    <div className="text-section" style={{marginBottom:"0"}}>
                         <h1>
                             Why Choose <span className="highlight">US?</span>
                         </h1>
@@ -113,7 +113,7 @@ const About = () => {
                                 <li><span><FaMicrophoneAlt /></span> Recording is fun… but editing is exhausting.
                                 </li>
                                 <li><span><ImMobile2 /></span>Posting once is easy… but building a following takes daily effort.</li>
-                                <li><span><HiOutlineSpeakerphone /></span> Ads can get reach… but if the story doesn’t hook, no one sticks.
+                                <li style={{marginBottom:"0"}}><span><HiOutlineSpeakerphone /></span> Ads can get reach… but if the story doesn’t hook, no one sticks.
                                 </li>
                             </ul>
                         </div>
