@@ -32,12 +32,20 @@ const About = () => {
                         <h5>About Us</h5>
                         <h1>24 Pods — Turning <span className="highlight">Your Ideas into Must-Listen Podcasts</span></h1>
                         <p>
-                            Podcasts are everywhere. But let’s be honest — most of them never make it past a few episodes. Not because the ideas aren’t good. Not because the guests aren’t interesting.
-                            It’s because creating a podcast that people actually want to hear takes more than a mic and a Zoom link.
+                            <p>Podcasts are everywhere. But let’s be honest — most of them never make it past a few episodes. Not because the ideas aren’t good. Not because the guests aren’t interesting.
+                            It’s because creating a podcast that people actually want to hear takes more than a mic and a Zoom link.</p><br></br>
 
-                            It takes story craft. It takes editing precision. It takes knowing exactly how to turn one conversation into something binge-worthy.<br></br>
+                            It takes story craft. It takes editing precision. It takes knowing exactly how to turn one conversation into something binge-worthy.<br></br><br></br>
 
-                            That’s where 24 Pods comes in.
+                            <span
+                                className="highlight"
+                                style={{
+                                    fontWeight: "700",
+                                    fontSize: "17px"
+                                }}
+                            >
+                                That’s where 24 Pods comes in.
+                            </span>
 
                         </p>
                         {/* <ul>
@@ -58,10 +66,10 @@ const About = () => {
                         <div className="paragraph">
 
                             <p>
-                                The name? 24 comes from our founder Alka’s birth date. Pods is our shorthand for what we live and breathe — podcasts.
-                                For over 10 years, Alka has been obsessed with how stories land. In branding, in campaigns, in content — she’s seen that the real magic doesn’t happen when you talk. It happens when you listen.
+                                The name? 24 comes from our founder Alka’s birth date. Pods is our shorthand for what we live and breathe — podcasts.<br></br>
+                                For over 10 years, Alka has been obsessed with how stories land. In branding, in campaigns, in content — she’s seen that the real magic doesn’t happen when you talk. It happens when you listen.<br></br>
 
-                                At 24 Pods, we start by listening to your raw recording. We hear where the emotion builds, where the curiosity spikes, where the audience will lean in… and where they might drop off. Then we shape it. Cut it. Colour it. Package it. Market it.
+                                At 24 Pods, we start by listening to your raw recording. We hear where the emotion builds, where the curiosity spikes, where the audience will lean in… and where they might drop off. Then we shape it. Cut it. Colour it. Package it. Market it.<br></br>
 
                                 AI is part of our toolkit, but it’s never the driver. Because podcasts are human conversations — and only a human ear knows when something truly clicks.
                             </p>
