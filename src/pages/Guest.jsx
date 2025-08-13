@@ -79,9 +79,9 @@ const Help = () => {
                     </div>
                     <div className="editing-content" data-aos="zoom-in-left">
                         {/* <h5>Editing</h5> */}
-                        <h1 className="subheading">Why Inspire from Reality?</h1>
+                        <h1 className="subheading" style={{color:"#660033"}}>Why Inspire from Reality?</h1>
                         <p>
-                            Alaka, our founder, believes you don’t need to fit in—you’re meant to stand out. Every person carries a unique set of traits shaped by the paths they’ve walked. That’s reality. That’s the naked truth. And somewhere out there, someone needs to hear your journey to find the courage for their own.
+                            Alaka, our founder, believes you don’t need to fit in—you’re meant to stand out. Every person carries a unique set of traits shaped by the paths they’ve walked. That’s reality.<br></br> <span style={{color:"#660033", fontWeight:"800"}}>That’s the naked truth.</span> And somewhere out there, someone needs to hear your journey to find the courage for their own.
                         </p>
                         <div className="messages">
                             <img src="/images/message-gif.gif" alt="" />
