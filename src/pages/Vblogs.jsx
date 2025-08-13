@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 // src/data.js
 const tabData = [
@@ -59,6 +61,13 @@ const tabData = [
 
 
 const Vblogs = () => {
+    useEffect(() => {
+                AOS.init({
+                    duration: 1000,
+                    once: false,
+                    mirror: true
+                });
+            }, []);
     const [activeTab, setActiveTab] = useState(tabData[0]);
 
 
@@ -71,9 +80,9 @@ const Vblogs = () => {
             </div>
             <div className="vertical-tabs-container ">
                 <div className="left-panel">
-                    <img src={activeTab.image} alt={activeTab.title} className="main-image" />
-                    <h1 className="image-title">{activeTab.title}</h1>
-                    <p className="image-description">{activeTab.content}</p>
+                    <img src={activeTab.image} alt={activeTab.title} className="main-image" data-aos="flip-up"/>
+                    <h1 className="image-title" data-aos="zoom-in">{activeTab.title}</h1>
+                    <p className="image-description" data-aos="zoom-in">{activeTab.content}</p>
                 </div>
 
                 <div className="right-panel">
