@@ -100,7 +100,7 @@ const About = () => {
 
                 <div className="home-content guest-third">
                     <h5 style={{ color: "#660033" }} data-aos="fade-down">Why We Exist</h5>
-                    <p className='about-gif-pargharph' data-aos="zoom-in">We’re here so your podcast doesn’t just “go live” — it lives in people’s heads.
+                    <p className='about-gif-pargharph' data-aos="zoom-in" style={{margin:"0"}}>We’re here so your podcast doesn’t just “go live” — it lives in people’s heads.
                         We don’t want you to be another show in the feed. We want you to be the show people tell their friends about.</p>
                     <button className="button home-button" data-aos="fade-up">
                         <a href="/contact_us">Join Us</a>
