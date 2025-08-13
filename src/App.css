@@ -3090,10 +3090,13 @@ iframe {
 
 
 .about-gif-pargharph {
-  color: rgb(0, 0, 0);
-  font-size: 18px;
-  text-align: center;
-  font-weight: 600 !important;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600 !important;
+    background-color: #ffffffa8;
+    padding: 13px;
+    border-radius: 15px;
 }
 
 

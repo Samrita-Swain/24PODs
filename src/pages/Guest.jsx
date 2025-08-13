@@ -63,9 +63,9 @@ const Help = () => {
                         <div className="overlay" />
             
                         <div className="home-content guest-third">
-                            <h5>Lorem Ipsum</h5>
-                            <h1>Lorem Ipsum is simply dummy text of the <br /> printing and typesetting industry.</h1>
-                            <button className="button home-button">
+                            <h5 data-aos="fade-down">Lorem Ipsum</h5>
+                            <h1 data-aos="zoom-in">Lorem Ipsum is simply dummy text of the <br /> printing and typesetting industry.</h1>
+                            <button className="button home-button" data-aos="fade-up">
                                <a href="/contact_us">Join Us</a>
                             </button>
                         </div>
