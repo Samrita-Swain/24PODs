@@ -71,6 +71,7 @@ const Welcome = () => {
                 </div>
             </div>
             <div className="testimonial-section">
+                <img src="/images/white-bg.png" alt="" className='testimonial-section-img'/>
                 <div className="testimonial-title">
                     <h1>
                     What <span className="highlight">Our Client</span> Say’s

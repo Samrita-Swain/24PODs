@@ -1465,6 +1465,7 @@ body {
   max-width: 100% !important;
 }
 
+
 .editing-content h3 {
   font-size: 24px;
   font-weight: bold;
@@ -1798,6 +1799,13 @@ body {
   padding-bottom: 10px;
   color: #000;
   text-align: center;
+  transition: 0.5s;
+}
+.guest-second .guest-second-boxes .first-box:hover h1{
+  color: #6a063a;
+}
+.guest-second .guest-second-boxes .second-box:hover h1{
+  color: #6a063a;
 }
 
 .guest-second .editing-content p {
@@ -3242,3 +3250,60 @@ iframe {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.testimonial-section-img{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.testimonial-section{
+  position: relative;
+  overflow: hidden;
+}
+
+.help-fourth{
+  position: relative;
+}
+.help-fourth-img{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 13%;
+}
+.guest-second{
+  position: relative;
+}
+.guest-second-section-img {
+  position: absolute;
+  top: 20px;
+  left: 26px;
+  width: 8%;
+  animation: jump 3s ease-in-out infinite;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0); /* Start & end at original position */
+  }
+  50% {
+    transform: translateY(-15px); /* Jump up */
+  }
+}
+
+@keyframes jump1 {
+  0%, 100% {
+    transform: scaleX(-1) translateY(0); /* mirror + original position */
+  }
+  50% {
+    transform: scaleX(-1) translateY(-15px); /* mirror + jump up */
+  }
+}
+
+.guest-second-section-second-img {
+  position: absolute;
+  bottom: 20px;
+  right: 16px;
+  width: 8%;
+  animation: jump1 3s ease-in-out infinite;
+}
+

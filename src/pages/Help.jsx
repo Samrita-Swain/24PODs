@@ -101,6 +101,7 @@ const Help = () => {
                 </div>
             </div>
             <div className="help-fourth">
+                <img src="/images/dots.png" alt="" className='help-fourth-img'/>
                 <div className="editing-container container">
                     <div className="editing-image" data-aos="zoom-in-right">
                         <div className="image-border">

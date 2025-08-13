@@ -28,20 +28,22 @@ const Help = () => {
                 </div>
             </div>
             <div className="about-third guest-second">
+                 <img src="/images/microphone.png" alt="" className='guest-second-section-img'/>
+                 <img src="/images/sound-img.png" alt="" className='guest-second-section-second-img'/>
                 <div className="about-container guest-second-section container">
                    <div className="editing-content">
                         <div className="heading" style={{textAlign:"center"}}>
-                            <h5>Lorem Ipsum</h5>
+                            <h5 style={{color: "#6a063a"}}>Lorem Ipsum</h5>
                         <p className="subheading">Whether you want to tell your story or learn from others, we’ve got you covered.</p>
                         </div>
                         <div className="guest-second-boxes">
                             <div className="first-box" data-aos="fade-right">
                                 <h1> Your Consultant for Guest Spots</h1>
-                                <p>We help you find the right podcasts to share your voice, connect with the right audiences, and grow your influence. From research to introductions, we handle the legwork so you can focus on showing up and shining.</p>
+                                <p style={{marginBottom:"0"}}>We help you find the right podcasts to share your voice, connect with the right audiences, and grow your influence. From research to introductions, we handle the legwork so you can focus on showing up and shining.</p>
                             </div>
                             <div className="second-box" data-aos="fade-left">
                                 <h1> Join Us on Inspire from Reality</h1>
-                                <p>Our own podcast, hosted by Alaka, is where raw truth meets real stories. No filters. No sugar-coating. Just conversations that matter.</p>
+                                <p style={{marginBottom:"0"}}>Our own podcast, hosted by Alaka, is where raw truth meets real stories. No filters. No sugar-coating. Just conversations that matter.</p>
                             </div>
                         </div>
                         {/* <button className="button menu-button mt-6 help-button">
