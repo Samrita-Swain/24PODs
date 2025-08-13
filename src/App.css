@@ -4,10 +4,14 @@ body {
   margin: 0;
   padding: 0;
 }
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+}
 
-/* body {
-  font-family: "Poppins", sans-serif;
-} */
 h1,
 h5 {
   font-family: "Jost", sans-serif;
