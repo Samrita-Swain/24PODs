@@ -33,7 +33,7 @@ const Help = () => {
                 <div className="about-container guest-second-section container">
                    <div className="editing-content">
                         <div className="heading" style={{textAlign:"center"}}>
-                            <h5 style={{color: "#6a063a"}}>Lorem Ipsum</h5>
+                            <h5 style={{color: "#6a063a", fontSize:"28px"}}>Lorem Ipsum</h5>
                         <p className="subheading">Whether you want to tell your story or learn from others, we’ve got you covered.</p>
                         </div>
                         <div className="guest-second-boxes">
@@ -64,7 +64,7 @@ const Help = () => {
             
                         <div className="home-content guest-third">
                             <h5 data-aos="fade-down">Lorem Ipsum</h5>
-                            <h1 data-aos="zoom-in">Lorem Ipsum is simply dummy text of the <br /> printing and typesetting industry.</h1>
+                            <h2 data-aos="zoom-in" className='video-text'>Lorem Ipsum is simply dummy text of the <br /> printing and typesetting industry.</h2>
                             <button className="button home-button" data-aos="fade-up">
                                <a href="/contact_us">Join Us</a>
                             </button>

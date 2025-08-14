@@ -10,7 +10,7 @@ import Welcome from './pages/Welcome';
 import Gallery from './pages/Gallery';
 import FormReality from './pages/FormReality';
 import ContactUs from './pages/ContactUs';
-import Vblogs from './pages/Vblogs';
+import OurPortfollio from "./pages/OurPortfollio";
 import ScrollToTopButton from './pages/ScrollToTopButton';
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
           <Route path="/become_a_member" element={<Welcome />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/inspire_from_reality" element={<FormReality />} />
-          <Route path="/vblogs" element={<Vblogs />} />
+          <Route path="/our_portfolio" element={<OurPortfollio />} />
           <Route path="/contact_us" element={<ContactUs />} />
         </Routes>
       </main>

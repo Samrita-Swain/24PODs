@@ -60,7 +60,7 @@ const tabData = [
 
 
 
-const Vblogs = () => {
+const OurPortfollio = () => {
     useEffect(() => {
                 AOS.init({
                     duration: 1000,
@@ -75,7 +75,7 @@ const Vblogs = () => {
         <div>
             <div className="vblogs-first">
                 <div className="content">
-                    <h1>Vblogs</h1>
+                    <h1>Our Portfolio</h1>
                 </div>
             </div>
             <div className="vertical-tabs-container ">
@@ -106,7 +106,7 @@ const Vblogs = () => {
     )
 }
 
-export default Vblogs
+export default OurPortfollio
 
 
 

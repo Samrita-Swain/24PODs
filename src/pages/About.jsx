@@ -51,7 +51,7 @@ const About = () => {
                             <span
                                 className="highlight"
                                 style={{
-                                    fontWeight: "700",
+                                    fontWeight: "800",
                                     fontSize: "17px"
                                 }}
                             >
@@ -137,7 +137,7 @@ const About = () => {
             </div>
 
 
-            <div className="about-fourth">
+            {/* <div className="about-fourth">
                 <div className="about-fourth-section container">
                     <div className="text-section">
                         <h1>
@@ -159,7 +159,7 @@ const About = () => {
                             </div>
 
                             <div className="card-footer">
-                                <h1>Lorem Ipsum</h1>
+                                <h2>Lorem Ipsum</h2>
                                 <p>Consultant</p>
                             </div>
                         </div>
@@ -177,7 +177,7 @@ const About = () => {
                             </div>
 
                             <div className="card-footer">
-                                <h1>Lorem Ipsum</h1>
+                                <h2>Lorem Ipsum</h2>
                                 <p>Consultant</p>
                             </div>
                         </div>
@@ -195,7 +195,7 @@ const About = () => {
                             </div>
 
                             <div className="card-footer">
-                                <h1>Lorem Ipsum</h1>
+                                <h2>Lorem Ipsum</h2>
                                 <p>Consultant</p>
                             </div>
                         </div>
@@ -213,13 +213,13 @@ const About = () => {
                             </div>
 
                             <div className="card-footer">
-                                <h1>Lorem Ipsum</h1>
+                                <h2>Lorem Ipsum</h2>
                                 <p>Consultant</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

@@ -7,7 +7,7 @@ const Footer = () => {
         <a href="/how_can_we_help">How can we Help?</a>
         <a href="/be_our_guest">Be Our Guest</a>
         <a href="/gallery">Gallery</a>
-        <a href="/vblogs">Vblogs</a>
+        <a href="/our_portfolio">Our Portfolio</a>
         <a href="/contact_us">Contact us</a>
       </div>
       <div className="footer-bottom">

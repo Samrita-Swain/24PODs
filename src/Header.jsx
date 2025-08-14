@@ -43,7 +43,7 @@ const Header = () => {
                         <a href="/become_a_member">Become A Member</a>
                         <a href="/inspire_from_reality">Inspire From Reality</a>
                         <a href="/gallery">Gallery</a>
-                        <a href="/vblogs">Vblogs</a>
+                        <a href="/our_portfolio">Our Portfolio</a>
                     </nav>
 
                     {/* Join Us Button inside the menu */}

@@ -11,6 +11,9 @@ body {
     position: relative;
   }
 }
+h1{
+  font-size: 28px !important;
+}
 
 h1,
 h5 {
@@ -300,7 +303,7 @@ body {
 }
 
 .footer-menu a:hover {
-  color: #9f0101;
+  color: #660033;
 }
 
 .footer-bottom {
@@ -382,7 +385,7 @@ body {
 }
 
 .home-content h1 {
-  font-size: 3.2vw;
+  font-size: 3.2vw !important;
   font-weight: 500;
   line-height: 1.3;
   max-width: 100%;
@@ -780,7 +783,7 @@ body {
 .about-fourth-section .text-section::before {
   position: absolute;
   content: '';
-  background-color: #9f0101;
+  background-color: #660033;
   height: 2px;
   width: 70px;
   margin-bottom: 10px;
@@ -1105,7 +1108,7 @@ body {
 }
 
 .highlight {
-  color: #9f0101;
+  color: #660033;
 }
 
 .section-container {
@@ -1129,14 +1132,14 @@ body {
 .text-section::before {
   content: '';
   position: absolute;
-  background-color: #9f0101;
+  background-color: #660033;
   height: 2px;
   width: 70px;
   top: 45px;
 }
 
 .highlight {
-  color: #9f0101;
+  color: #660033;
 }
 
 .service-grid {
@@ -1269,7 +1272,7 @@ body {
   top: 50%;
   left: 55%;
   transform: translate(-50%, -50%);
-  background-color: crimson;
+  background-color: #660033;
   color: white;
   font-size: 32px;
   width: 60px;
@@ -1327,7 +1330,7 @@ body {
 .help_third .text-section::before {
   position: absolute;
   content: '';
-  background-color: #9f0101;
+  background-color: #660033;
   height: 2px;
   width: 70px;
   top: 45px;
@@ -1446,7 +1449,7 @@ body {
 }
 
 .image-border {
-  border: 3px solid #9f0101;
+  border: 3px solid #660033;
   padding: 8px;
   display: inline-block;
   max-width: 100%;
@@ -1477,7 +1480,7 @@ body {
 }
 
 .subheading {
-  color: #9f0101;
+  color: #660033;
   font-weight: 500;
   margin-bottom: 16px;
 }
@@ -1490,7 +1493,7 @@ body {
 }
 
 .cta-button {
-  background-color: #9f0101;
+  background-color: #660033;
   color: white;
   border: none;
   padding: 10px 22px;
@@ -1501,7 +1504,7 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #9f0101;
+  background-color: #660033;
 }
 
 .help-button {
@@ -1788,7 +1791,7 @@ body {
 }
 
 .guest-second .editing-content h5 {
-  color: #9f0101;
+  color: #660033;
   font-size: 24px;
   font-weight: 600;
   margin: 0;
@@ -2056,7 +2059,7 @@ body {
 .testimonial-title::before {
   position: absolute;
   content: '';
-  background-color: #9f0101;
+  background-color: #660033;
   height: 2px;
   width: 70px;
   margin-bottom: 10px;
@@ -2523,7 +2526,7 @@ body {
 }
 
 .form-group label span {
-  color: red;
+  color: #660033;
 }
 
 input[type="text"],
@@ -2546,7 +2549,7 @@ textarea {
 
 .submit-button {
   padding: 10px 20px;
-  background-color: #b31830;
+  background-color: #660033;
   color: white;
   border: none;
   border-radius: 8px;
@@ -2556,7 +2559,7 @@ textarea {
 }
 
 .submit-button:hover {
-  background-color: #a1162b;
+  background-color: #660033;
 }
 
 .contact-wrapper {
@@ -2666,7 +2669,7 @@ textarea {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 24px;
-  background: rgba(192, 0, 64, 0.8);
+  background: #660033e6;
   color: white;
   border: none;
   border-radius: 50%;
@@ -3252,7 +3255,7 @@ iframe {
     right: 0;
 }
 .help-second {
-    background-image: url(/public/images/bg.png);
+    background-image: url(/images/bg.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3314,3 +3317,16 @@ iframe {
   animation: jump1 3s ease-in-out infinite;
 }
 
+
+
+.video-text{
+  font-size: 20px !important;
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  font-family: 500;
+}
+.card-footer h2 {
+    font-size: 19px;
+    font-family: "Jost", sans-serif;
+    margin: 0;
+}
