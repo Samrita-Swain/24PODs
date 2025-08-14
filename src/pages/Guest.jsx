@@ -33,7 +33,7 @@ const Help = () => {
                 <div className="about-container guest-second-section container">
                    <div className="editing-content">
                         <div className="heading" style={{textAlign:"center"}}>
-                            <h5 style={{color: "#6a063a", fontSize:"28px"}}>Lorem Ipsum</h5>
+                            <h5 style={{color: "#6a063a", fontSize:"28px"}}>From Guest Spots to Great Stories</h5>
                         <p className="subheading">Whether you want to tell your story or learn from others, we’ve got you covered.</p>
                         </div>
                         <div className="guest-second-boxes">
