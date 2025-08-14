@@ -112,7 +112,7 @@ const About = () => {
 
                     <div className="text-section" style={{marginBottom:"0"}}>
                         <h1>
-                            Why Choose <span className="highlight">US?</span>
+                            The Problem <span className="highlight">We Solve</span>
                         </h1>
                         <div className="paragraph">
 
