@@ -1,4 +1,8 @@
-import React, { useState } from 'react';
+import React, { useRef, useState, useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import emailjs from "@emailjs/browser";
+import { FromRealityForm } from "./form/FromRealityForm";
 
 const tabs = ['All', 'Lorem Ipsum', 'Lorem Ipsum 2', 'Lorem Ipsum 3'];
 
@@ -38,6 +42,13 @@ const videoData = [
 
 
 const FromReality = () => {
+  useEffect(() => {
+          AOS.init({
+              duration: 1000,
+              once: false,
+              mirror: true
+          });
+      }, []);
   const [selectedTab, setSelectedTab] = useState('All');
   const [currentVideo, setCurrentVideo] = useState(null);
 
@@ -45,6 +56,37 @@ const FromReality = () => {
     selectedTab === 'All'
       ? videoData
       : videoData.filter(video => video.tab === selectedTab);
+
+       const form = useRef();
+  const [loading, setLoading] = useState(false);
+  const [successMsg, setSuccessMsg] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setSuccessMsg("");
+    setErrorMsg("");
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID", // replace with your EmailJS service ID
+        "YOUR_TEMPLATE_ID", // replace with your EmailJS template ID
+        form.current,
+        "YOUR_PUBLIC_KEY" // replace with your EmailJS public key
+      )
+      .then(
+        () => {
+          setSuccessMsg("Your form has been sent successfully!");
+          form.current.reset();
+        },
+        (error) => {
+          setErrorMsg("Failed to send. Please try again later.");
+          console.error(error);
+        }
+      )
+      .finally(() => setLoading(false));
+  };
 
   return (
     <div>
@@ -88,6 +130,7 @@ const FromReality = () => {
           </div>
         )}
       </div>
+      <FromRealityForm />
     </div>
   )
 }
