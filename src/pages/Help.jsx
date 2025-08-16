@@ -52,9 +52,9 @@ const Help = () => {
 
                 <div className="right-content" data-aos="zoom-out">
                     <div className="image-stack">
-                        <img src="/images/1st-img.jpg" alt="Host 1" className="host-img" />
-                        <img src="/images/2nd-img.jpg" alt="Host 2" className="host-img second-img" />
-                        <div className="play-button">&#9658;</div>
+                        <img src="/images/garima.jpg" alt="Host 1" className="host-img" />
+                        <img src="/images/alka.jpg" alt="Host 2" className="host-img second-img" />
+                        <a href="/inspire_from_reality"><div className="play-button">&#9658;</div></a>
                     </div>
                 </div>
             </div>

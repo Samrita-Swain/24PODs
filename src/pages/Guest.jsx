@@ -58,8 +58,17 @@ const Help = () => {
                 </div>
             </div>
             <div className="video-container guest-third-section">
-                        <img src="/images/podcast-gif.gif" alt="Animated Background" className="gif-bg" />
-            
+                        <video
+        className="bg-video"
+        src="/videos/main-img.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        style={{width:"100%", height:"100%", objectFit: "cover",
+    objectPosition: "center"}}
+      />
                         <div className="overlay" />
             
                         <div className="home-content guest-third">

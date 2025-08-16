@@ -8,7 +8,7 @@ const videoData = [
     id: 1,
     tab: "All",
     thumbnail: "/images/IFR-1.png",
-    videoUrl: "/images/garima & rachecl.mp4"
+    videoUrl: "/videos/garima & rachecl.mp4"
   },
   {
     id: 2,
