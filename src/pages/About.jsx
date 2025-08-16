@@ -66,6 +66,92 @@ const About = () => {
                     </div>
                 </div>
             </div>
+             <section className="podcast-hero" aria-labelledby="podcast-heading" style={{background:"#f3f3f3"}}>
+      <style>{`
+        .podcast-hero{--card-bg:linear-gradient(135deg,#1f1144 0%,#4b2a86 50%,#8a4bf0 100%);display:flex;align-items:center;justify-content:center;padding:48px 20px;}
+        .podcast-card{position:relative;max-width:980px;width:100%;background:rgba(255,255,255,0.04);backdrop-filter:blur(6px);border-radius:18px;padding:36px;display:grid;grid-template-columns:1fr 360px;gap:28px;box-shadow:0 10px 30px rgba(13,8,31,0.6);overflow:hidden}
+        
+
+        .left{display:flex;flex-direction:column;gap:18px}
+        h2{font-family:"Jost", sans-serif; color:#660033;margin:0;font-size:28px;line-height:1.05;letter-spacing:-0.4px}
+        p.lead{color:#000;margin:0;font-size:16px}
+        p.small{color:#000;margin:0;font-size:14px}
+
+        .bullets{display:flex;flex-direction:row;gap:10px;margin-top:6px}
+        .bullet{display:flex;gap:12px;align-items:flex-start}
+        .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(180deg,#ffd17a,#ff7ab6);margin-top:6px;box-shadow:0 4px 14px rgba(255,122,182,0.15)}
+
+        .actions{display:flex;gap:12px;align-items:center;margin-top:18px}
+        .btn{padding:12px 18px;border-radius:12px;border:0;cursor:pointer;font-weight:600;font-size:15px}
+        .btn-primary{background:linear-gradient(90deg,#ff7ab6,#7a5cff);color:white;box-shadow:0 8px 30px rgba(122,92,255,0.22);}
+        .btn-ghost{background:transparent;color:#000;border:1px solid rgba(255,255,255,0.08)}
+
+        .meta{display:flex;gap:18px;align-items:center;color:#000;margin-top:10px}
+        .meta small{display:block}
+
+        .right{display:flex;flex-direction:column;gap:14px;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));padding:18px;border-radius:12px}
+        .wave-wrap{display:flex;align-items:center;gap:12px}
+        .play{width:64px;height:64px;border-radius:12px;background:linear-gradient(180deg,#fff,#f3f3f3);display:grid;place-items:center;box-shadow:0 6px 18px rgba(16,9,60,0.4);}
+        .play svg{width:28px;height:28px}
+        .wave{flex:1;background:#660033;height:72px;border-radius:10px;display:flex;align-items:center;padding:12px 16px;gap:8px}
+        .wave svg{height:48px;width:100%;opacity:0.95}
+
+        .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+        .tag{font-size:13px;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);color:rgba(255,255,255,0.9);border:1px solid rgba(255,255,255,0.03)}
+
+        @media (max-width:900px){
+          .podcast-card{grid-template-columns:1fr;}
+          .right{order:-1}
+        }
+      `}</style>
+
+      <div className="podcast-card" role="region" aria-label="Podcast service overview" data-aos="zoom-in">
+       
+       
+
+        <div className="left">
+          <h2 id="podcast-heading">Show Up. Talk. Leave the rest to us.</h2>
+          <p className="lead">Born from Digiware’s creative powerhouse, <strong>24 Pods</strong> exists to take the heavy lifting off your shoulders so you can focus on what matters — showing up and talking.</p>
+
+          <div className="bullets">
+            <div className="bullet"><span className="dot" aria-hidden></span><p className="small"><strong>We shoot.</strong> </p></div>
+            <div className="bullet"><span className="dot" aria-hidden></span><p className="small"><strong>We edit.</strong></p></div>
+            <div className="bullet"><span className="dot" aria-hidden></span><p className="small"><strong>We post.</strong></p></div>
+            <div className="bullet"><span className="dot" aria-hidden></span><p className="small"><strong>We market.</strong></p></div>
+          </div>
+        </div>
+
+        <aside className="right" aria-label="Podcast preview">
+          <div className="wave-wrap">
+            <div className="play" role="button" aria-label="Play preview">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7L8 5z" fill="#660033"/></svg>
+            </div>
+
+            <div className="wave" aria-hidden>
+              {/* simple waveform made with SVG bars */}
+              <svg viewBox="0 0 200 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="g1" x1="0" x2="1">
+                    <stop offset="0%" stopColor="#e0afff" />
+                    <stop offset="100%" stopColor="#660033" />
+                  </linearGradient>
+                </defs>
+                <g fill="url(#g1)">
+                  {/* repeat bars */}
+                  {Array.from({length:30}).map((_,i)=>{
+                    const h = 6 + Math.abs(Math.sin(i*0.6))*36;
+                    const x = 4 + i*6;
+                    return <rect key={i} x={x} y={48-h} width={4} height={h} rx={2} />
+                  })}
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          
+        </aside>
+      </div>
+    </section>
             <div className="about-third">
                 <div className="about-container about-third-section container">
 
@@ -137,7 +223,7 @@ const About = () => {
             </div>
 
 
-            {/* <div className="about-fourth">
+            <div className="about-fourth">
                 <div className="about-fourth-section container">
                     <div className="text-section">
                         <h1>
@@ -159,7 +245,7 @@ const About = () => {
                             </div>
 
                             <div className="card-footer">
-                                <h2>Lorem Ipsum</h2>
+                                <h2 style={{color:"#fff"}}>Lorem Ipsum</h2>
                                 <p>Consultant</p>
                             </div>
                         </div>
@@ -177,7 +263,7 @@ const About = () => {
                             </div>
 
                             <div className="card-footer">
-                                <h2>Lorem Ipsum</h2>
+                                <h2  style={{color:"#fff"}}>Lorem Ipsum</h2>
                                 <p>Consultant</p>
                             </div>
                         </div>
@@ -195,7 +281,7 @@ const About = () => {
                             </div>
 
                             <div className="card-footer">
-                                <h2>Lorem Ipsum</h2>
+                                <h2  style={{color:"#fff"}}>Lorem Ipsum</h2>
                                 <p>Consultant</p>
                             </div>
                         </div>
@@ -213,13 +299,13 @@ const About = () => {
                             </div>
 
                             <div className="card-footer">
-                                <h2>Lorem Ipsum</h2>
+                                <h2  style={{color:"#fff"}}>Lorem Ipsum</h2>
                                 <p>Consultant</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
         </div>
     );
 };

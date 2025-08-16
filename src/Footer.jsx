@@ -12,14 +12,14 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <p>
-  © 2025 24PODS | All rights reserved | Developed by{" "}
+  © 2025 24PODS &nbsp;|&nbsp; All rights reserved &nbsp;|&nbsp; Developed by{" "}
   <a
-    href="https://crushaderstech.com/"
+    href="https://digiware.com.au/"
     target="_blank"
     rel="noopener noreferrer"
     style={{ color: "#fff", textDecoration: "none" }}
   >
-    Crushaders Tech
+    Digiware Digital
   </a>
 </p>
 
