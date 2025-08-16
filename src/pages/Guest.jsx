@@ -74,7 +74,7 @@ const Help = () => {
                 <div className="editing-container container">
                     <div className="editing-image">
                         <div className="image-border" data-aos="flip-left">
-                            <img src="/images/help-editing.png" alt="Editing" />
+                            <img src="/images/one.png" alt="Editing" />
                         </div>
                     </div>
                     <div className="editing-content" data-aos="zoom-in-left">
@@ -84,7 +84,7 @@ const Help = () => {
                             Alaka, our founder, believes you don’t need to fit in—you’re meant to stand out. Every person carries a unique set of traits shaped by the paths they’ve walked. That’s reality.<br></br> <span style={{color:"#660033", fontWeight:"800"}}>That’s the naked truth.</span> And somewhere out there, someone needs to hear your journey to find the courage for their own.
                         </p>
                         <div className="messages">
-                            <img src="/images/message-gif.gif" alt="" />
+                            <img src="/images/message.png" alt="" data-aos="zoom-in-right"/>
                             <p>If your story can spark a change, let’s share it.</p>
                         </div>
                         <button className="button menu-button mt-6 help-button inspire-btn">

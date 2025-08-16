@@ -7,8 +7,8 @@ const videoData = [
   {
     id: 1,
     tab: "All",
-    thumbnail: "/images/about-1.jpg",
-    videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4"
+    thumbnail: "/images/IFR-1.png",
+    videoUrl: "/images/garima & rachecl.mp4"
   },
   {
     id: 2,

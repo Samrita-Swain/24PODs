@@ -3,6 +3,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -458,9 +459,9 @@ body {
     display: none;
   }
 
-  .video-container {
+  /* .video-container {
     height: 65vh;
-  }
+  } */
 
   .home-content {
     left: 8%;
@@ -482,9 +483,9 @@ body {
 }
 
 @media (max-width: 480px) {
-  .video-container {
+  /* .video-container {
     height: 77vh;
-  }
+  } */
 
   .video-container {
     margin-top: 57px;

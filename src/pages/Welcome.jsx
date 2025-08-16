@@ -65,7 +65,7 @@ const Welcome = () => {
                     </div>
 
                     <div className="image-section" data-aos="zoom-in-left">
-                        <img src="/images/about-third.png" alt="" />
+                        <img src="/images/two.png" alt="" />
                     </div>
 
                 </div>

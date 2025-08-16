@@ -4,7 +4,17 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 const Home = () => {
     return (
         <div className="video-container">
-            <img src="/images/home-gif.gif" alt="Animated Background" className="gif-bg" />
+             <video
+        className="bg-video"
+        src="/videos/main-img.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        style={{width:"100%", height:"100%", objectFit: "cover",
+    objectPosition: "center"}}
+      />
 
             <div className="overlay" />
 
