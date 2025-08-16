@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import emailjs from "@emailjs/browser";
 import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -6,7 +7,7 @@ import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  
 
   const [open, setOpen] = useState(false);
   const [sending, setSending] = useState(false);
@@ -18,6 +19,7 @@ const Header = () => {
   const dialogRef = useRef(null);
   const formRef = useRef(null);
   const awardsRef = useRef(null);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   // SETTINGS — tweak as needed
   const MAX_PDF_SIZE_BYTES = 2 * 1024 * 1024; // 2 MB limit for "Any awards" PDF
@@ -137,6 +139,177 @@ const Header = () => {
       setSending(false);
     }
   };
+   // Modal JSX to portal — high z-index so it sits above everything
+  const ModalPortal = () =>
+    createPortal(
+      <div
+        className="modal-backdrop"
+        onClick={() => setOpen(false)}
+        aria-hidden={!open}
+        style={{
+          position: "fixed",
+          inset: 0,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "flex-start",
+          padding: "clamp(12px, 3vw, 28px)",
+          background: "radial-gradient(1200px 800px at 50% 50%, rgba(0,0,0,.6), rgba(0,0,0,.9))",
+          backdropFilter: "blur(6px)",
+          zIndex: 99999, // VERY high so it sits above menu
+          overflow: "auto",
+        }}
+      >
+        <div
+          className="modal-card"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="cta-title"
+          aria-describedby="cta-desc"
+          ref={dialogRef}
+          tabIndex={-1}
+          onClick={(e) => e.stopPropagation()}
+          style={{
+            position: "relative",
+            width: "min(940px, 100%)",
+            borderRadius: "18px",
+            background: "#261542",
+            border: "1px solid rgba(255,255,255,0.12)",
+            boxShadow: "0 30px 120px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.04)",
+            color: "#f5f7fb",
+            padding: "clamp(16px, 3vw, 28px)",
+            marginBlock: "clamp(12px, 4vh, 28px)",
+            maxHeight: "calc(100vh - 2 * clamp(12px, 4vh, 28px))",
+            overflowY: "auto",
+            overscrollBehavior: "contain",
+          }}
+        >
+          <button
+            className="close-x"
+            aria-label="Close"
+            onClick={() => setOpen(false)}
+            style={{
+              position: "absolute",
+              top: 10,
+              right: 10,
+              width: 44,
+              height: 44,
+              borderRadius: 12,
+              background: "rgba(255,255,255,0.04)",
+              border: "1px solid rgba(255,255,255,0.12)",
+              color: "#fff",
+              cursor: "pointer",
+              display: "grid",
+              placeItems: "center",
+              fontSize: 18,
+            }}
+          >
+            ✕
+          </button>
+
+          <div className="modal-header" style={{ marginBottom: 14, paddingRight: 40 }}>
+            <h2 id="cta-title" style={{ margin: 0, color: "#e0afff" }}>
+              Let's turn ideas into impact 🚀
+            </h2>
+            <p id="cta-desc" style={{ margin: 0, color: "rgba(215, 231, 255, 0.9)" }}>
+              Your content shouldn’t just exist—it should connect, convert, and create impact. Let’s make it happen.
+              <br />
+              <strong>📅 Book your free strategy call today</strong> and see how we can take your idea from concept to clicks.
+            </p>
+          </div>
+
+          {/* Form */}
+          <form ref={formRef} onSubmit={onSubmit} className="form" noValidate>
+            <div className="grid" style={{ display: "grid", gridTemplateColumns: "1fr", gap: 12 }}>
+              <label className="field" style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                <span style={{ color: "#d7def3" }}>Name</span>
+                <input name="user_name" type="text" placeholder="Your full name" required style={inputStyle} />
+              </label>
+
+              <label className="field" style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                <span style={{ color: "#d7def3" }}>Business name</span>
+                <input name="user_business_name" type="text" placeholder="Your business name" required style={inputStyle} />
+              </label>
+
+              <label className="field full" style={{ gridColumn: "1 / -1", display: "flex", flexDirection: "column", gap: 8 }}>
+                <span style={{ color: "#d7def3" }}>Link to last few podcast where you were guest</span>
+                <input
+                  name="user_podcast_link"
+                  type="url"
+                  inputMode="url"
+                  placeholder="https://example.com/your-episode"
+                  onInput={handleUrlInput}
+                  required
+                  style={inputStyle}
+                />
+                {urlError && <small style={{ color: "#ff9aa5" }}>{urlError}</small>}
+                <small style={{ color: "#aeb7c7" }}>Only a valid http/https link is accepted.</small>
+              </label>
+
+              <label className="field full" style={{ gridColumn: "1 / -1", display: "flex", flexDirection: "column", gap: 8 }}>
+                <span style={{ color: "#d7def3" }}>Any awards (PDF, max {Math.round(MAX_PDF_SIZE_BYTES / 1024 / 1024)}MB)</span>
+                <input
+                  ref={awardsRef}
+                  name="awards_pdf"
+                  type="file"
+                  accept="application/pdf"
+                  onChange={handlePdfChange}
+                  style={{ padding: 8, background: "rgba(255,255,255,0.03)", borderRadius: 8 }}
+                />
+                {fileError && <small style={{ color: "#ff9aa5" }}>{fileError}</small>}
+              </label>
+            </div>
+
+            <label className="field" style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              <span style={{ color: "#d7def3" }}>Your expertise & experience</span>
+              <textarea name="message" rows={4} placeholder="Tell us a bit about your expertise & experience …" style={textareaStyle} />
+            </label>
+
+            <button
+              className="submit-btn"
+              type="submit"
+              disabled={sending}
+              style={{
+                marginTop: 6,
+                padding: "12px 18px",
+                borderRadius: 12,
+                border: "none",
+                fontWeight: 700,
+                color: "#fff",
+                background: "linear-gradient(90deg,#8a1253,#b80066)",
+                cursor: "pointer",
+              }}
+            >
+              {sending ? "Sending…" : "Request My Free Call"}
+            </button>
+
+            {status && (
+              <p style={{ marginTop: 8, color: status === "success" ? "#5be49b" : "#ff6b6b" }}>{statusMsg}</p>
+            )}
+
+            <p style={{ marginTop: 6, color: "#9aa3b2", fontSize: ".85rem" }}>🔒 We respect your time & privacy. No spam—ever.</p>
+          </form>
+        </div>
+      </div>,
+      document.body
+    );
+
+  // basic inline styles reused
+  const inputStyle = {
+    width: "100%",
+    background: "rgba(255,255,255,0.04)",
+    color: "#f5f7fb",
+    border: "1px solid rgba(255,255,255,0.12)",
+    borderRadius: 12,
+    padding: "12px 14px",
+    outline: "none",
+  };
+
+  const textareaStyle = {
+    ...inputStyle,
+    minHeight: 110,
+    resize: "vertical",
+  };
+
 
   return (
     <header className="header w-full flex justify-between items-center bg-white shadow-md fixed top-0 z-50 px-6 py-4">
@@ -273,7 +446,7 @@ const Header = () => {
           </nav>
 
           {/* Join Us Button inside the menu */}
-          <button className="cta-btn" onClick={() => setOpen(true)}>
+          <button className="cta-btn" onClick={() => { setMenuOpen(false); setOpen(true); }}>
             <span className="sparkle" aria-hidden />
             Book Free Call
           </button>
