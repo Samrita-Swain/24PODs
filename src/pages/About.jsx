@@ -34,7 +34,7 @@ const About = () => {
                             <img src="/images/alka-about.png" alt="Small2" className="small-image bottom-circle" data-aos="zoom-in" />
                         </div>
                         <div className="experience-box" data-aos="fade-right">
-                            <span className="years">30</span>
+                            <span className="years">10</span>
                             <span className="exp-text">Years Of <br />Experience</span>
                         </div>
                     </div>
@@ -162,7 +162,7 @@ const About = () => {
                         <div className="paragraph">
 
                             <p style={{ marginBottom: '0' }}>
-                                <span style={{ color: "#e0afff", fontWeight: "700" }}>The 24PODS,</span><br></br> 24 comes from our founder Alka’s birth date. Pods is our shorthand for what we live and breathe — podcasts.<br></br>
+                                <span style={{ color: "#e0afff", fontWeight: "700" }}>The 24PODS,</span><br></br> 24 comes from our founder Alaka’s birth date. Pods is our shorthand for what we live and breathe — podcasts.<br></br>
                                 For over 10 years, Alka has been obsessed with how stories land. In branding, in campaigns, in content — she’s seen that the real magic doesn’t happen when you talk. It happens when you listen.<br></br><br></br>
 
                                 <span style={{ color: "#e0afff", fontWeight: "700" }}> At 24PODS,</span><br></br> We start by listening to your raw recording. We hear where the emotion builds, where the curiosity spikes, where the audience will lean in… and where they might drop off. Then we shape it. Cut it. Colour it. Package it. Market it.<br></br>
