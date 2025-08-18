@@ -23,7 +23,7 @@ const Help = () => {
         <div>
             <div className="help-first">
                 <div className="content">
-                    <h1>How Can we Help</h1>
+                    <h1 style={{textAlign:"center"}}>How Can we Help</h1>
                 </div>
             </div>
             <div className="help-second section-container">
