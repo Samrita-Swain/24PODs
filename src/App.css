@@ -216,7 +216,7 @@ body {
 }
 
 /* === Responsive Tweaks === */
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
   .social-icons {
     font-size: 30px;
 }
@@ -610,7 +610,7 @@ body {
 
 .top-circle {
   top: 13px;
-  right: -48px;
+  right: -72px;
   position: absolute;
 }
 
@@ -1915,7 +1915,7 @@ body {
   }
 
   .guest-third-section {
-    height: 50vh;
+    height: 65vh;
     /* padding: 40px 0px; */
   }
 
@@ -3457,6 +3457,7 @@ iframe {
   padding: 50px 50px;
   display: flex;
   justify-content: center;
+  align-items: center;
   background: linear-gradient(180deg, #030412 0%, #071028 100%);
   
   box-sizing: border-box;
@@ -3678,4 +3679,11 @@ iframe {
 }
 .memberform .text-section::before{
   display: none;
+}
+
+
+
+.about-image-section{
+  border: 3px solid #660033;
+  padding: 10px;
 }

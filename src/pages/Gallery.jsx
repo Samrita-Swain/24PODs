@@ -8,7 +8,7 @@ const galleryItems = [
     { id: 1, category: 'Garima & Rachecl', src: '/images/garima-rachecl.png' },
     { id: 2, category: 'Garima & Alka', src: '/images/garima-alka-vblogs.png' },
     { id: 3, category: 'Garima & Rachecl', src: '/images/about-2.jpg' },
-    { id: 4, category: 'Garima & Alka', src: '/images/about-1.jpg' },
+    { id: 4, category: 'Garima & Alka', src: '/images/team.jpeg' },
     { id: 5, category: 'Garima & Alka', src: '/images/about-3.jpg' },
 ];
 

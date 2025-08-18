@@ -29,7 +29,7 @@ const About = () => {
                     <img src="/images/white-bg.png" alt="" className='about-second-section-img' />
                     <div className="image-section">
                         <div className="main-image-wrapper">
-                            <img src="/images/alka-garima.png" alt="Main" className="main-image" data-aos="zoom-in" />
+                            <img src="/images/group-img.jpeg" alt="Main" className="main-image" data-aos="zoom-in" />
                             <img src="/images/rachecl-garima-small.png" alt="Small1" className="small-image top-circle" data-aos="zoom-in" />
                             <img src="/images/alka-about.png" alt="Small2" className="small-image bottom-circle" data-aos="zoom-in" />
                         </div>
@@ -172,7 +172,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="image-section" data-aos="fade-left">
-                        <img src="/images/about-third.png" alt="" />
+                        <img src="/images/alka-img.jpeg" alt="" />
                     </div>
 
 
@@ -224,8 +224,8 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className="image-section" data-aos="zoom-in">
-                        <img src="\images\podcast-side-gif.gif" alt="" />
+                    <div className="image-section about-image-section" data-aos="zoom-in">
+                        <img src="/images/team.jpeg" alt="" />
                     </div>
 
                 </div>
