@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 const services = [
     { name: "Studio", icon: "/images/studio.png", content: " Professional, fully equipped, and ready to make you look & sound your best." },
     { name: "Shoot", icon: "/images/shoot.png", content: "High-quality recording with the right angles, lighting, and sound." },
-    { name: "Editing", icon: "/images/video-editing.png", content: "Crisp, polished, and on-brand." },
+    { name: "Editing", icon: "/images/editing.png", content: "Crisp, polished, and on-brand." },
     { name: "Ads", icon: "/images/ads.png", content: " Campaigns that get your content seen by the right people." },
     { name: "Marketing", icon: "/images/marketing.png", content: " Distribution strategies that grow your audience and authority." },
 ];

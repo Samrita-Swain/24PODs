@@ -110,8 +110,8 @@ export const FromRealityForm = () => {
     return (
         <div className="fr-form-wrap">
             <div className="text-section" data-aos="flip-up">
-      <img src="images/join-us.png" alt="" />
-      </div>
+                <img src="images/join-us.png" alt="" />
+            </div>
             <div className="fr-card" data-aos="zoom-in">
 
                 <form ref={formRef} onSubmit={sendEmail} className="fr-form" noValidate>

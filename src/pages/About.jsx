@@ -225,7 +225,7 @@ const About = () => {
                     </div>
 
                     <div className="image-section" data-aos="zoom-in">
-                        <img src="/images/gif-podcast.gif" alt="" />
+                        <img src="\images\podcast-side-gif.gif" alt="" />
                     </div>
 
                 </div>

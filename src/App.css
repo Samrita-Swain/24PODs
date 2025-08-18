@@ -1228,9 +1228,9 @@ body {
 }
 
 .service-front img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 8px;
+  width: 55px;
+  height: 55px;
+  /* margin-bottom: 8px; */
   transition: transform 0.4s ease;
 }
 
@@ -3670,4 +3670,12 @@ iframe {
   .fr-label textarea {
     font-size: .95rem;
   }
+}
+
+
+.fr-form-wrap .text-section::before{
+  display: none;
+}
+.memberform .text-section::before{
+  display: none;
 }
