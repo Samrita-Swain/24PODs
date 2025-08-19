@@ -4,27 +4,51 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 const Home = () => {
     return (
         <div className="video-container">
-             <video
-        className="bg-video"
-        src="/videos/Sequence 01_1.mp4"
+      {/* Desktop / Laptop */}
+      <video
+        className="bg-video video-desktop"
+        src="/videos/main-video-laptop.mp4"
         autoPlay
         muted
         loop
         playsInline
-        preload="auto"
-        style={{width:"100%", height:"100%", objectFit: "cover",
-    objectPosition: "center"}}
+        preload="metadata"
       />
 
-            <div className="overlay" />
+      {/* Tablet */}
+      <video
+        className="bg-video video-tablet"
+        src="/videos/tab.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+      />
 
-            <div className="home-content">
-                <h1>Be open: Welcome creative and <br></br><span>"out of the box"</span> ideas </h1>
-                <button className="button home-button">
-                    Explore More <MdKeyboardArrowRight className='home-icon'/>
-                </button>
-            </div>
-        </div>
+      {/* Mobile */}
+      <video
+        className="bg-video video-mobile"
+        src="/videos/mob.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+      />
+
+      <div className="overlay" />
+
+      <div className="home-content">
+        <h1>
+          Be open: Welcome creative and <br />
+          <span>"out of the box"</span> ideas
+        </h1>
+        <button className="button home-button">
+          Explore More <MdKeyboardArrowRight className="home-icon" />
+        </button>
+      </div>
+    </div>
     );
 };
 
