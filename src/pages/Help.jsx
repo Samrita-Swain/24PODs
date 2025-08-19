@@ -98,7 +98,7 @@ const Help = () => {
 
                         </div>
                     </div>
-                    <button class="button home-button aos-init aos-animate" data-aos="fade-up" style={{marginTop:"45px", border:"none"}}><a href="/files/packages.pdf" target="_blank" rel="noopener noreferrer">Join Us</a></button>
+                    <button class="button home-button aos-init aos-animate" data-aos="fade-up" style={{marginTop:"45px", border:"none"}}><a href="/files/packages.pdf" target="_blank" rel="noopener noreferrer">View Packages</a></button>
                 </div>
             </div>
             {/* <div className="help-fourth">

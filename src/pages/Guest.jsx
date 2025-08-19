@@ -97,7 +97,7 @@ const Help = () => {
                             <p>If your story can spark a change, let’s share it.</p>
                         </div>
                         <button className="button menu-button mt-6 help-button inspire-btn">
-                            <a href="/contact_us">Chackout Yourself</a>
+                            <a href="/inspire_from_reality">Chackout Yourself</a>
                         </button>
                     </div>
                 </div>
