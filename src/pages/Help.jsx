@@ -59,7 +59,7 @@ const Help = () => {
                 </div>
             </div>
             <div className="help_third">
-                <div className="help_third">
+                <div className='help_post'>
                     <div className="help-third-section">
                         <div className="text-section">
                             <h1>
@@ -98,6 +98,7 @@ const Help = () => {
 
                         </div>
                     </div>
+                    <button class="button home-button aos-init aos-animate" data-aos="fade-up" style={{marginTop:"45px"}}><a href="/files/packages.pdf" target="_blank" rel="noopener noreferrer">Join Us</a></button>
                 </div>
             </div>
             {/* <div className="help-fourth">

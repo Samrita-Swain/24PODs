@@ -199,11 +199,10 @@ body {
 
 /* === Social Icons === */
 .social-icons {
-     display: flex
-;
-    flex-direction: row;
-    gap: 2rem;
-    font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-size: 20px;
 }
 
 .social-icons a {
@@ -219,16 +218,18 @@ body {
 @media (max-width: 1024px) {
   .social-icons {
     font-size: 30px;
-}
-  .menu a{
-        text-decoration: none;
+  }
+
+  .menu a {
+    text-decoration: none;
     color: #fff;
     font-size: 26px;
     font-weight: 500;
     transition: 0.5s;
     margin-bottom: 14px;
-    
+
   }
+
   .header {
     padding: 10px 20px;
   }
@@ -257,9 +258,9 @@ body {
   }
 
   .menu a {
-          font-size: 22px !important;
-        margin-bottom: 10px;
-    
+    font-size: 22px !important;
+    margin-bottom: 10px;
+
   }
 
   .menu-button {
@@ -291,8 +292,8 @@ body {
   }
 
   .social-icons {
-            gap: 2rem;
-        font-size: 23px;
+    gap: 2rem;
+    font-size: 23px;
   }
 }
 
@@ -458,10 +459,10 @@ body {
 /* Tablets and small laptops */
 @media (max-width: 1024px) {
   .menu a {
-     font-size: 22px !important;
-        margin-bottom: 10px;
-    
-}
+    font-size: 22px !important;
+    margin-bottom: 10px;
+
+  }
 
   .home-content h1 {
     font-size: 28px !important;
@@ -508,10 +509,10 @@ body {
   } */
 
 
-   .video-container {
+  .video-container {
     height: 76vh;
-}
-  
+  }
+
 
   .home-content h1 {
     font-size: 27px !important;
@@ -1359,7 +1360,7 @@ body {
 
 .help_third {
   background-color: #261542;
-  padding: 50px 20px;
+  padding: 50px 70px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1421,7 +1422,7 @@ body {
 .help-third-boxes .box .straight-line {
   position: absolute;
   width: 2px;
-  height: 95px;
+  height: 110px;
   background: #660033;
 }
 
@@ -3464,7 +3465,7 @@ iframe {
   justify-content: center;
   align-items: center;
   background: linear-gradient(180deg, #030412 0%, #071028 100%);
-  
+
   box-sizing: border-box;
   gap: 2rem;
 }
@@ -3648,13 +3649,15 @@ iframe {
 
 /* responsive */
 @media (max-width: 980px) {
-  .fr-form-wrap img{
+  .fr-form-wrap img {
     width: 100%;
   }
+
   .fr-form-wrap {
     flex-direction: column;
     padding: 50px 30px;
-}
+  }
+
   .fr-card {
     grid-template-columns: 1fr;
     padding: 18px;
@@ -3680,16 +3683,29 @@ iframe {
 }
 
 
-.fr-form-wrap .text-section::before{
-  display: none;
-}
-.memberform .text-section::before{
+.fr-form-wrap .text-section::before {
   display: none;
 }
 
+.memberform .text-section::before {
+  display: none;
+}
 
 
-.about-image-section{
+
+.about-image-section {
   border: 3px solid #660033;
   padding: 10px;
+}
+
+
+
+
+
+
+  .help_post{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
