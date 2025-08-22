@@ -7,7 +7,7 @@ import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 
 const Header = () => {
-  
+
 
   const [open, setOpen] = useState(false);
   const [sending, setSending] = useState(false);
@@ -139,7 +139,7 @@ const Header = () => {
       setSending(false);
     }
   };
-   // Modal JSX to portal — high z-index so it sits above everything
+  // Modal JSX to portal — high z-index so it sits above everything
   const ModalPortal = () =>
     createPortal(
       <div
@@ -324,9 +324,9 @@ const Header = () => {
       <div className="header-right-side flex items-center gap-4">
         {/* Conditionally render Join Us button only when menu is closed */}
         {!menuOpen && (
-          <button className="cta-btn" onClick={() => setOpen(true)}>
+          <button className="cta-btn header-cta" onClick={() => setOpen(true)}>
             <span className="sparkle" aria-hidden />
-            Book Free Call
+            Don’t Just Talk. Get Heard
           </button>
         )}
 
@@ -362,17 +362,17 @@ const Header = () => {
               <form ref={formRef} onSubmit={onSubmit} className="form" noValidate>
                 <div className="grid">
                   <label className="field">
-                    <h1 style={{margin:"0"}}><span>Name</span><span style={{color:"#e10404", marginLeft:"5px"}}>*</span></h1>
+                    <h1 style={{ margin: "0" }}><span>Name</span><span style={{ color: "#e10404", marginLeft: "5px" }}>*</span></h1>
                     <input name="user_name" type="text" placeholder="Your full name" required />
                   </label>
 
                   <label className="field">
-                    <h1 style={{margin:"0"}}><span>Business name</span><span style={{color:"#e10404", marginLeft:"5px"}}>*</span></h1>
+                    <h1 style={{ margin: "0" }}><span>Business name</span><span style={{ color: "#e10404", marginLeft: "5px" }}>*</span></h1>
                     <input name="user_business_name" type="text" placeholder="Your business name" required />
                   </label>
 
                   <label className="field full">
-                    <h1 style={{margin:"0"}}><span>Link to last few podcast where you were guest</span><span style={{color:"#e10404", marginLeft:"5px"}}>*</span></h1>
+                    <h1 style={{ margin: "0" }}><span>Link to last few podcast where you were guest</span><span style={{ color: "#e10404", marginLeft: "5px" }}>*</span></h1>
                     <input
                       name="user_podcast_link"
                       type="url"
@@ -386,23 +386,23 @@ const Header = () => {
                   </label>
 
                   <label className="field full">
-                    <h1 style={{margin:"0"}}><span>Any awards (PDF, max {Math.round(MAX_PDF_SIZE_BYTES / 1024 / 1024)}MB)</span></h1>
+                    <h1 style={{ margin: "0" }}><span>Any awards (PDF, max {Math.round(MAX_PDF_SIZE_BYTES / 1024 / 1024)}MB)</span></h1>
                     <input
                       ref={awardsRef}
                       name="awards_pdf" // EmailJS will attach this file to the email
                       type="file"
                       accept="application/pdf"
                       onChange={handlePdfChange}
-                      style={{cursor:"pointer"}}
-                      
+                      style={{ cursor: "pointer" }}
+
                     />
                     {fileError && <small className="hint error">{fileError}</small>}
                   </label>
                 </div>
 
                 <label className="field">
-                  <h1 style={{margin:"0"}}><span>Your expertise & experience</span></h1>
-                  <textarea name="message" rows={4} placeholder="Tell us a bit about your expertise & experience …"/>
+                  <h1 style={{ margin: "0" }}><span>Your expertise & experience</span></h1>
+                  <textarea name="message" rows={4} placeholder="Tell us a bit about your expertise & experience …" />
                 </label>
 
                 <button className="submit-btn" type="submit" disabled={sending}>
@@ -560,6 +560,7 @@ const Header = () => {
         .grid{ display:grid; grid-template-columns: 1fr; gap:12px; align-items:start; }
         @media (min-width: 560px){ .grid{ grid-template-columns: 1fr 1fr; } }
         @media (min-width: 900px){ .grid{ gap: 16px; } }
+        
 
         /* Each field should be allowed to shrink (fixes overlap) */
         .field{ display:flex; flex-direction:column; gap:8px; min-width: 0; }
