@@ -505,6 +505,7 @@ const Header = () => {
           isolation: isolate;
         }
         .cta-btn:hover{ background:#e0afff; color:#000; }
+        
 
         /* Backdrop */
         .modal-backdrop{
@@ -611,6 +612,47 @@ const Header = () => {
         .modal-card::-webkit-scrollbar{ width: 10px; }
         .modal-card::-webkit-scrollbar-thumb{ background: rgba(255,255,255,.08); border-radius: 10px; }
         .modal-card{ scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.12) transparent; }
+
+      @keyframes smoothJump {
+  0%   { transform: translateY(0); }
+  20%  { transform: translateY(-12px); }
+  40%  { transform: translateY(0); }
+  60%  { transform: translateY(-6px); }
+  80%  { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
+
+.cta-btn {
+  animation: smoothJump 1.5s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+  will-change: transform;
+}
+
+/* optional: stop jumping on hover/focus */
+.cta-btn:hover,
+.cta-btn:focus { animation-play-state: paused; }
+
+/* optional sparkle so the span does something */
+.sparkle::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 12px;
+  pointer-events: none;
+  background: radial-gradient(180px 180px at 20% 0%, rgba(255,255,255,.15), transparent 60%),
+              radial-gradient(160px 140px at 100% 100%, rgba(255,255,255,.08), transparent 60%);
+  filter: blur(12px);
+  animation: twinkle 2s linear infinite;
+}
+@keyframes twinkle {
+  0%,100% { opacity: .6; }
+  50%     { opacity: 1; }
+}
+
+/* accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .cta-btn { animation: none; }
+}
+
       `}</style>
     </header>
   );
