@@ -49,15 +49,15 @@ const Welcome = () => {
 
                     <div className="text-section" data-aos="zoom-in-right" style={{marginBottom:"0"}}>
                         <h1>
-                            Why Choose <span className="highlight">US?</span>
+                            Why Join <span className="highlight">PodsMembership?</span>
                         </h1>
                         <div className="paragraph guest-fifth">
                             {/* <div className="straight-line"></div> */}
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen book.
+                            <p style={{marginBottom:"15px"}}>
+                                Most podcasters quit because of the workload: editing, finding guests, posting clips, running campaigns, chasing reviews. It’s too much.
                             </p>
+                            <p style={{marginBottom:"15px"}}>With PodsMembership, you don’t have to.</p>
+                            <p>We take the chaos off your plate — so <span className="highlight">your podcast not only survives, it thrives.</span></p>
                         </div>
                         <button className="button menu-button mt-6 help-button" style={{marginBottom:"0"}}>
                             <a href="/contact_us">Join Us</a>

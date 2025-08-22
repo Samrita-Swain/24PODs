@@ -1915,9 +1915,9 @@ body {
   text-align: center;
 }
 
-.guest-fifth p {
+/* .guest-fifth p {
   margin-bottom: 30px;
-}
+} */
 
 .guest-third {
   align-items: center;
@@ -3744,4 +3744,12 @@ iframe {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+
+ul.content-list.aos-init.aos-animate {
+    color: #000000d9;
+}
+ul.content-list.aos-init.aos-animate li::marker {
+    color: #620031;
 }

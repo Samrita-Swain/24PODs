@@ -45,7 +45,7 @@ const Home = () => {
           <span>"out of the box"</span> ideas
         </h1>
         <button className="button home-button">
-          Explore More <MdKeyboardArrowRight className="home-icon" />
+          <a href="/how_can_we_help">Explore More <MdKeyboardArrowRight className="home-icon" /></a>
         </button>
       </div>
     </div>

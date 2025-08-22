@@ -180,17 +180,19 @@ const About = () => {
                 </div>
             </div>
             <div className="video-container guest-third-section">
-                 <video
-        className="bg-video"
-        src="/videos/garima & rachecl.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        style={{width:"100%", height:"100%", objectFit: "cover",
-    objectPosition: "center"}}
-      />
+                <video
+                    className="bg-video"
+                    src="/videos/garima-and-rachecl.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                    style={{
+                        width: "100%", height: "100%", objectFit: "cover",
+                        objectPosition: "center"
+                    }}
+                />
                 <div className="overlay" style={{ backgroundColor: "#f3f3f33d" }} />
 
                 <div className="home-content guest-third">

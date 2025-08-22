@@ -6,21 +6,31 @@ import 'aos/dist/aos.css';
 const tabData = [
   {
     id: 1,
-    title: "Garima & Alka",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    title: "Content That Demands Attention",
+    description: "Your listeners give you the most precious resource they have...",
     imageLeft: "/images/garima-alka-vblogs.png",
     imageRight: "/images/garima.png",
-    content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`
+    content: `Your listeners give you the most precious resource they have: their time. To respect that, every episode must do more than fill space—it must capture attention quickly and hold it. That means:`,
+    points: [
+      "Starting strong with a hook that makes people lean in.",
+      "Structuring conversations with clarity, not clutter.",
+      "Producing audio so sharp and polished that your ideas shine without distraction."
+    ],
+    lastcontent: `Because when the sound is clean and the story is clear, your message carries further.`
   },
   {
     id: 2,
-    title: "Garima & Rachecl",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    title: "Marketing That Moves Beyond Posting Links",
+    description: "Too many creators think “sharing a link” equals marketing...",
     imageLeft: "/images/garima-rachecl.png",
     imageRight: "/images/rachecl.png",
-    content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`
+    content: `Too many creators think “sharing a link” equals marketing. It doesn’t. Marketing is about creating moments of discovery. That could be:`,
+    points: [
+      "Turning a five-minute highlight into a TikTok clip that sparks curiosity.",
+      "Sharing a quote card on Instagram that inspires a save and a share.",
+      "Writing show notes that don’t just describe—but rank on search engines."
+    ],
+    lastcontent: `The secret isn’t shouting louder—it’s being found more often.`
   }
 ];
 
@@ -46,19 +56,26 @@ const OurPortfollio = () => {
       <div className="vertical-tabs-container">
         <div className="left-panel">
           {/* Left Side Image */}
-          <img 
-            src={activeTab.imageLeft} 
-            alt={activeTab.title} 
-            className="main-image" 
+          <img
+            src={activeTab.imageLeft}
+            alt={activeTab.title}
+            className="main-image"
             data-aos="flip-left"
           />
-          <h1 className="image-title" data-aos="zoom-in">{activeTab.title}</h1>
+          <h1 className="image-title" data-aos="zoom-in" style={{color:"#660033"}}>{activeTab.title}</h1>
           <p className="image-description" data-aos="zoom-in">{activeTab.content}</p>
+          {/* UL List */}
+          <ul className="content-list" data-aos="fade-up">
+            {activeTab.points.map((line, index) => (
+              <li key={index}>{line}</li>
+            ))}
+          </ul>
+          <p className="image-description" data-aos="fade-up">{activeTab.lastcontent}</p>
         </div>
 
         <div className="right-panel">
           {/* Right Side Image */}
-         
+
 
           {/* Tabs List */}
           {tabData.map((tab) => (
