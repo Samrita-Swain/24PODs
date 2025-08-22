@@ -448,7 +448,7 @@ const Header = () => {
           {/* Join Us Button inside the menu */}
           <button className="cta-btn" onClick={() => { setMenuOpen(false); setOpen(true); }}>
             <span className="sparkle" aria-hidden />
-            Book Free Call
+            Don’t Just Talk. Get Heard
           </button>
 
           {/* Social Icons */}
