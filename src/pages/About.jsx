@@ -182,7 +182,7 @@ const About = () => {
             <div className="video-container guest-third-section">
                 <video
                     className="bg-video"
-                    src="/videos/garima & rachecl.mp4"
+                    src="/videos/garima-and-rachecl.mp4"
                     autoPlay
                     muted
                     loop
