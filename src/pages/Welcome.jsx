@@ -109,14 +109,37 @@ const Welcome = () => {
 
                 </div>
             </div>
+
+            
             <div className="testimonial-section">
                 <img src="/images/white-bg.png" alt="" className='testimonial-section-img' />
-                <div className="testimonial-title">
+                {/* <div className="testimonial-title">
                     <h1>
-                        What  <span className="highlight">You Get</span>
+                        Your Own-<span className="highlight">Own PodsTeam</span>
                     </h1>
+                </div> */}
+                 <div className="about-container about-third-section" style={{justifyContent:"center"}}>
+                     <div className="image-section" data-aos="zoom-in-left">
+                        <img src="/images/alaka-g.png" alt="" />
+                    </div>
+
+
+                    <div className="text-section" data-aos="zoom-in-right" style={{ marginBottom: "0" , textAlign:"left"}}>
+                       <h1 style={{color:"#000"}}>
+                        Your Own-<span className="highlight">Own PodsTeam</span>
+                    </h1>
+                        <div className="paragraph guest-fifth">
+                            {/* <div className="straight-line"></div> */}
+                            <p style={{ marginBottom: "15px" , color:"#000"}}>
+                                We’ve built something special — a membership designed for creators, leaders, and businesses who want their podcast to grow without the hassle. With PodsMembership, you don’t just get services. You get a full team — your own-Own PodsTeam — handling everything behind the scenes while you focus on your voice.
+                            </p>
+                            <p><span className="highlight" style={{fontWeight:"700"}}>Only 10 spots available.</span></p>
+                        </div>
+                        
+                    </div>
+
                 </div>
-                <Swiper
+                {/* <Swiper
                     slidesPerView={2}
                     spaceBetween={30}
                     pagination={{ clickable: true }}
@@ -141,7 +164,9 @@ const Welcome = () => {
                             </div>
                         </SwiperSlide>
                     ))}
-                </Swiper>
+                </Swiper> */}
+
+
 
 
             </div>
