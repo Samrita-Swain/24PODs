@@ -74,10 +74,10 @@ const Welcome = () => {
                 <img src="/images/white-bg.png" alt="" className='testimonial-section-img'/>
                 <div className="testimonial-title">
                     <h1>
-                    What <span className="highlight">Our Client</span> Say’s
+                    What  <span className="highlight">You Get</span>
                 </h1>
                 </div>
-                <Swiper
+                {/* <Swiper
                     slidesPerView={2}
                     spaceBetween={30}
                     pagination={{ clickable: true }}
@@ -102,7 +102,7 @@ const Welcome = () => {
                             </div>
                         </SwiperSlide>
                     ))}
-                </Swiper>
+                </Swiper> */}
             </div>
             <MemberForm />
         </div>
