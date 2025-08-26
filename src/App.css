@@ -432,9 +432,12 @@ body {
   flex-direction: column;
   align-items: flex-start;
 }
-
+    
 /* Breakpoints: show only one video */
 @media (min-width: 1025px) {
+  .video-container.guest-third-section {
+    height: 50vh !important;
+}
   .video-desktop {
     display: block;
   }
@@ -491,6 +494,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .video-container.guest-third-section {
+        height: 30vh !important;
+    }
   .home-content {
     left: 8%;
   }

@@ -28,8 +28,8 @@ const Help = () => {
                 </div>
             </div>
             <div className="about-third guest-second">
-                <img src="/images/microphone.png" alt="" className='guest-second-section-img' />
-                <img src="/images/sound-img.png" alt="" className='guest-second-section-second-img' />
+                {/* <img src="/images/microphone.png" alt="" className='guest-second-section-img' />
+                <img src="/images/sound-img.png" alt="" className='guest-second-section-second-img' /> */}
                 <div className="about-container guest-second-section container">
                     <div className="editing-content">
                         <div className="heading" style={{ textAlign: "center" }}>
@@ -57,18 +57,43 @@ const Help = () => {
 
                 </div>
             </div>
+            
             <div className="video-container guest-third-section">
+
+                {/* Desktop / Laptop */}
                 <video
-                    className="bg-video"
+                    className="bg-video video-desktop"
                     src="/videos/garima-and-rachecl.mp4"
                     autoPlay
                     muted
                     loop
                     playsInline
-                    preload="auto"
-                    style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }}
+                    preload="metadata"
                 />
-                <div className="overlay" />
+
+                {/* Tablet */}
+                <video
+                    className="bg-video video-tablet"
+                    src="/videos/garima-and-rachecl.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                />
+
+                {/* Mobile */}
+                <video
+                    className="bg-video video-mobile"
+                    src="/videos/garima-and-rachecl.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                />
+
+                <div className="overlay" style={{ backgroundColor: "#1d1033a6" }} />
 
                 <div className="home-content guest-third">
                     <h5 data-aos="fade-down" style={{ fontSize: "40px" }}>Your Story. Our Studio. Zero Stress.</h5>

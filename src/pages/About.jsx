@@ -43,8 +43,8 @@ const About = () => {
                         <h5>About Us</h5>
                         <h1>24 Pods — Turning <span className="highlight">Your Ideas into Must-Listen Podcasts</span></h1>
                         <p>
-                            <p>Podcasts are everywhere. But let’s be honest — most of them never make it past a few episodes. Not because the ideas aren’t good. Not because the guests aren’t interesting.
-                                It’s because creating a podcast that people actually want to hear takes more than a mic and a Zoom link.</p><br></br>
+                            Podcasts are everywhere. But let’s be honest — most of them never make it past a few episodes. Not because the ideas aren’t good. Not because the guests aren’t interesting.
+                            It’s because creating a podcast that people actually want to hear takes more than a mic and a Zoom link.<br></br>
 
                             It takes story craft. It takes editing precision. It takes knowing exactly how to turn one conversation into something binge-worthy.<br></br><br></br>
 
@@ -179,7 +179,7 @@ const About = () => {
 
                 </div>
             </div>
-            <div className="video-container guest-third-section">
+            {/* <div className="video-container guest-third-section">
                 <video
                     className="bg-video"
                     src="/videos/garima-and-rachecl.mp4"
@@ -193,6 +193,53 @@ const About = () => {
                         objectPosition: "center"
                     }}
                 />
+                <div className="overlay" style={{ backgroundColor: "#f3f3f33d" }} />
+
+                <div className="home-content guest-third">
+                    <h5 style={{ color: "#660033", paddingBottom: "10px" }} data-aos="fade-down">Why We Exist</h5>
+                    <p className='about-gif-pargharph' data-aos="zoom-in" style={{ margin: "0" }}>We’re here so your podcast doesn’t just “go live” — it lives in people’s heads.
+                        We don’t want you to be another show in the feed. We want you to be the show people tell their friends about.</p>
+                    <button className="button home-button" data-aos="fade-up">
+                        <a href="/contact_us">Join Us</a>
+                    </button>
+                </div>
+            </div> */}
+
+            <div className="video-container guest-third-section">
+             
+                 {/* Desktop / Laptop */}
+      <video
+        className="bg-video video-desktop"
+        src="/videos/garima-and-rachecl.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+      />
+
+      {/* Tablet */}
+      <video
+        className="bg-video video-tablet"
+        src="/videos/garima-and-rachecl.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+      />
+
+      {/* Mobile */}
+      <video
+        className="bg-video video-mobile"
+        src="/videos/garima-and-rachecl.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+      />
+
                 <div className="overlay" style={{ backgroundColor: "#f3f3f33d" }} />
 
                 <div className="home-content guest-third">
