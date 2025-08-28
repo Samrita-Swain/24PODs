@@ -4546,7 +4546,7 @@ background-color: #261542 !important;
   border: 1px solid var(--cardBorder);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
     border-radius: 16px;
-    padding: 12px 14px;
+    padding: 20px 20px;
     box-shadow: var(--shadow);
     backdrop-filter: blur(6px);
   display: flex;

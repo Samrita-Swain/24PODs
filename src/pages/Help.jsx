@@ -152,7 +152,7 @@ const Help = () => {
                     )}
 
                 </div>
-                <button class="button home-button aos-init aos-animate" data-aos="fade-up" style={{ marginTop: "25px", border: "none" }}>
+                <button class="button home-button aos-init aos-animate" data-aos="fade-up" style={{ marginTop: "40px", border: "none" }}>
                     <a href="/files/packages.pdf" target="_blank" rel="noopener noreferrer">View Packages</a>
                 </button>
             </div>
