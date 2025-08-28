@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
+import { FaPodcast, FaCalendarCheck, FaUsers, FaVideo } from 'react-icons/fa';
+
 
 const services = [
     { name: "Studio", icon: "/images/studio.png", content: " Professional, fully equipped, and ready to make you look & sound your best." },
@@ -10,20 +12,40 @@ const services = [
     { name: "Marketing", icon: "/images/marketing.png", content: " Distribution strategies that grow your audience and authority." },
 ];
 
+const features = [
+    {
+        icon: <FaPodcast />,
+        title: 'Manage the entire podcast shoot from start to finish.',
+    },
+    {
+        icon: <FaCalendarCheck />,
+        title: 'Arrange shows and recording schedules tailored to your goals.',
+    },
+    {
+        icon: <FaUsers />,
+        title: 'Source and coordinate guests who match your brand and audience.',
+    },
+    {
+        icon: <FaVideo />,
+        title:
+            'Provide host coaching, set design, and on-site support to make you feel camera-ready.',
+    },
+];
 
 const Help = () => {
+    const [activeTab, setActiveTab] = useState('production');
     useEffect(() => {
-            AOS.init({
-                duration: 1000,
-                once: false,
-                mirror: true
-            });
-        }, []);
+        AOS.init({
+            duration: 1000,
+            once: false,
+            mirror: true
+        });
+    }, []);
     return (
         <div>
             <div className="help-first">
                 <div className="content">
-                    <h1 style={{textAlign:"center"}}>How Can we Help</h1>
+                    <h1 style={{ textAlign: "center" }}>How Can we Help</h1>
                 </div>
             </div>
             <div className="help-second section-container">
@@ -59,47 +81,80 @@ const Help = () => {
                 </div>
             </div>
             <div className="help_third">
-                <div className='help_post'>
-                    <div className="help-third-section">
-                        <div className="text-section">
-                            <h1>
-                                Post Production
-                            </h1>
-                        </div>
-                        <div className="help-third-boxes">
-                            <div className="box" data-aos="zoom-in-right">
-                                <h1>Editing</h1>
-                                <div className="paragraph">
-                                    <div className="straight-line"></div>
-                                    <p>
-                                       Most videos lose viewers in the first 10 seconds. We keep them watching with sharp cuts, clean audio, and visuals that feel premium from start to finish—so your content holds attention, not dust.
-
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="box second-box" data-aos="zoom-in-down">
-                                <h1>Social Media</h1>
-                                <div className="paragraph">
-                                    <p>
-                                       Good content is wasted if it never reaches the right eyes. We tailor reels, captions, thumbnails, and hashtags for each platform, turning casual scrollers into engaged followers and loyal listeners.
-
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="box" data-aos="zoom-in-left">
-                                <h1>Ads </h1>
-                                <div className="paragraph">
-                                    <div className="straight-line"></div>
-                                    <p>
-                                        Throwing money at ads without strategy is a fast way to get nothing back. We create campaigns built for your audience, delivering attention that translates into clicks, conversations, and conversions.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
+                <div className="tab-wrapper">
+                    <div className="tab-buttons">
+                        <button
+                            className={activeTab === 'production' ? 'active' : ''}
+                            onClick={() => setActiveTab('production')}
+                        >
+                            Production
+                        </button>
+                        <button
+                            className={activeTab === 'postproduction' ? 'active' : ''}
+                            onClick={() => setActiveTab('postproduction')}
+                        >
+                            Post Production
+                        </button>
                     </div>
-                    <button class="button home-button aos-init aos-animate" data-aos="fade-up" style={{marginTop:"45px", border:"none"}}><a href="/files/packages.pdf" target="_blank" rel="noopener noreferrer">View Packages</a></button>
+
+                    {/* Production Section */}
+                    {activeTab === 'production' && (
+                        <div className="tab-content" data-aos="fade-up">
+                            <div className="features-container">
+                                {features.map((feature, index) => (
+                                    <div key={index} className="feature-card">
+                                        <div className="icon">{feature.icon}</div>
+                                        <p>{feature.title}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+
+                    {/* Post Production Section */}
+                    {activeTab === 'postproduction' && (
+                        <div>
+                            <div className='help_post'>
+                                <div className="help-third-section">
+                                    {/* <div className="text-section">
+                                    <h1> Post Production </h1>
+                                </div> */}
+                                    <div className="help-third-boxes">
+                                        <div className="box" data-aos="zoom-in-right">
+                                            <h1>Editing</h1> <div className="paragraph">
+                                                <div className="straight-line"></div>
+                                                <p> Most videos lose viewers in the first 10 seconds. We keep them watching with sharp cuts,
+                                                    clean audio, and visuals that feel premium from start to finish—so your content holds attention,
+                                                    not dust. </p>
+                                            </div>
+                                        </div> <div className="box second-box" data-aos="zoom-in-down">
+                                            <h1>Social Media</h1>
+                                            <div className="paragraph">
+                                                <p> Good content is wasted if it never reaches the right eyes. We tailor reels,
+                                                    captions, thumbnails, and hashtags for each platform, turning casual scrollers into
+                                                    engaged followers and loyal listeners. </p>
+                                            </div>
+                                        </div>
+                                        <div className="box" data-aos="zoom-in-left">
+                                            <h1>Ads </h1>
+                                            <div className="paragraph">
+                                                <div className="straight-line">
+                                                </div>
+                                                <p> Throwing money at ads without strategy is a fast way to get nothing back.
+                                                    We create campaigns built for your audience, delivering attention that
+                                                    translates into clicks, conversations, and conversions. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
                 </div>
+                <button class="button home-button aos-init aos-animate" data-aos="fade-up" style={{ marginTop: "25px", border: "none" }}>
+                    <a href="/files/packages.pdf" target="_blank" rel="noopener noreferrer">View Packages</a>
+                </button>
             </div>
             {/* <div className="help-fourth">
                 <img src="/images/dots.png" alt="" className='help-fourth-img'/>

@@ -285,7 +285,7 @@ const About = () => {
                 <div className="about-fourth-section container">
                     <div className="text-section">
                         <h1>
-                            Our <span className="highlight">Team</span>
+                            Our Podcast Studio <span className="highlight">Partner</span>
                         </h1>
                     </div>
                     <div className="about-fourth-cards">

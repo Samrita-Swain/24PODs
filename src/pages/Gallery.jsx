@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
-const tabs = ['All', 'Garima & Rachecl', 'Garima & Alka'];
+const tabs = ['All', 'Our Lunch', 'BTS Moments'];
 
 const galleryItems = [
-    { id: 1, category: 'Garima & Rachecl', src: '/images/garima-rachecl.png' },
-    { id: 2, category: 'Garima & Alka', src: '/images/garima-alka-vblogs.png' },
-    { id: 3, category: 'Garima & Rachecl', src: '/images/about-2.jpg' },
-    { id: 4, category: 'Garima & Alka', src: '/images/team.jpeg' },
-    { id: 5, category: 'Garima & Alka', src: '/images/about-3.jpg' },
+    { id: 1, category: 'Our Lunch', src: '/images/garima-rachecl.png' },
+    { id: 2, category: 'BTS Moments', src: '/images/garima-alka-vblogs.png' },
+    { id: 3, category: 'Our Lunch', src: '/images/about-2.jpg' },
+    { id: 4, category: 'BTS Moments', src: '/images/team.jpeg' },
+    { id: 5, category: 'BTS Moments', src: '/images/about-3.jpg' },
 ];
 
 const Gallery = () => {

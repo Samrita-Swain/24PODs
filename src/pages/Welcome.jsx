@@ -80,7 +80,7 @@ const Welcome = () => {
         <div>
             <div className="welcome-first">
                 <div className="content">
-                    <h1>welcome to members club</h1>
+                    <h1>Welcome to members club</h1>
                 </div>
             </div>
             <div className="about-third">
@@ -270,7 +270,7 @@ const Welcome = () => {
                             <h3>What's included</h3>
                             <ol>
                                 <li>✅ Dedicated Producer</li>
-                                <li>✅ 8 episodes/month</li>
+                                <li>✅ 2 episodes/month</li>
                                 <li>✅ Distribution + Ads</li>
                                 <li>✅ Monthly growth report</li>
                             </ol>

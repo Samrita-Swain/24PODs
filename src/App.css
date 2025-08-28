@@ -257,6 +257,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .testimonial-section {
+    padding: 40px 35px !important;
+}
   .openmenu {
     top: 75px !important;
   }
@@ -3448,6 +3451,9 @@ iframe {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 60px 70px;
 }
 
 .testimonial-section-img {
@@ -4386,4 +4392,187 @@ background-color: #261542 !important;
 
 
 
+
+
+
+
+
+/* Basic Reset */
+.tab-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    /* padding: 40px 20px; */
+}
+
+/* Tab Buttons */
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.tab-buttons button {
+    padding: 12px 24px;
+    border: 2px solid #660033;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+}
+
+
+.tab-buttons .active {
+    background: #660033;
+    color: #fff;
+    border-color: #660033;
+}
+
+/* Tab Content */
+.tab-content {
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-content h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Boxes */
+/* .help-third-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+} */
+
+/* .box {
+    background: #f8f8f8;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.paragraph {
+    color: #555;
+} */
+
+/* .straight-line {
+    width: 50px;
+    height: 4px;
+    background: #333;
+    margin: 10px 0;
+    border-radius: 5px;
+} */
+
+/* Button */
+/* .button.home-button {
+    margin-top: 40px;
+    display: block;
+    padding: 12px 28px;
+    background: #000;
+    color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button.home-button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button.home-button:hover {
+    background: #444;
+} */
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+/* @media (max-width: 600px) {
+    .tab-buttons button {
+        width: 100%;
+        font-size: 14px;
+    }
+} */
+
+
+
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  
+}
+
+.feature-card {
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--cardBorder);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+    border-radius: 16px;
+    padding: 12px 14px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.icon {
+  font-size: 36px;
+  color: #e0afff;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  font-size: 17px;
+  color: #fff;
+  line-height: 1.5;
+  margin: 0;
+}
+.tab-buttons button:hover{
+  background-color: #660033;
+}
 
