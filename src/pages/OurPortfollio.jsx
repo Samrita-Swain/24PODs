@@ -6,21 +6,19 @@ import 'aos/dist/aos.css';
 const tabData = [
   {
     id: 1,
-    title: "Garima & Alka",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    title: "Garima & Alaka",
+    description: "Garima and Alka sat down for a heartfelt talk about AI and digital marketing...",
     imageLeft: "/images/garima-alka-vblogs.png",
     imageRight: "/images/garima.png",
-    content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`
+    content: `Garima and Alka sat down for a heartfelt talk about AI and digital marketing — two superpower industries shaping our future.The conversation was bold, raw, and packed with insights.And yes, we edited it into something unforgettable. `
   },
   {
     id: 2,
-    title: "Garima & Rachecl",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    title: "Garima & Rachel",
+    description: "Rachel and Garima explored a mix no one saw coming: Wellness and AI.Two worlds...",
     imageLeft: "/images/garima-rachecl.png",
     imageRight: "/images/rachecl.png",
-    content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`
+    content: `Rachel and Garima explored a mix no one saw coming: Wellness and AI.Two worlds that feel poles apart… yet so deeply connected.Their conclusion? AI wellness isn’t optional — it’s necessary.`
   }
 ];
 
