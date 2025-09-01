@@ -453,7 +453,7 @@ const Header = () => {
 
           {/* Social Icons */}
           <div className="social-icons">
-            <a href="#">
+            <a href="https://www.facebook.com/profile.php?id=61579069562747" target="_blank" rel="noopener noreferrer">
               <FaFacebookF />
             </a>
             <a href="#">
