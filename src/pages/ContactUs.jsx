@@ -17,15 +17,15 @@ const ContactUs = () => {
         <div className="contact-info">
           <div className="info-item">
             <FaMapMarkerAlt className="icon" />
-            <p>Lorem Ipsum is simply dummy text</p>
+            <p>Level 5 Nexus Norwest, 4 Columbia Ct, <br />Norwest NSW 2153</p>
           </div>
           <div className="info-item">
             <FaPhoneAlt className="icon" />
-            <p>+91 987654321</p>
+            <p>+61 416461094</p>
           </div>
           <div className="info-item">
             <FaEnvelope className="icon" />
-            <p>loremIpsum@gmail.com</p>
+            <p>alaka.satapathy@digiware.com.au</p>
           </div>
 
           <div className="map-container">

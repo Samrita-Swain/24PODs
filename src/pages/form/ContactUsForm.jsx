@@ -43,7 +43,7 @@ export const ContactUsForm = () => {
         <textarea name="message" rows="5" />
       </div>
 
-      <button type="submit" className="button menu-button mt-6 help-button memberform-btn">Submit</button>
+      <button type="submit" className="button menu-button mt-6 help-button memberform-btn" style={{marginBottom:"0"}}>Submit</button>
     </form>
   );
 };
