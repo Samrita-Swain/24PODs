@@ -206,39 +206,39 @@ const About = () => {
             </div> */}
 
             <div className="video-container guest-third-section">
-             
-                 {/* Desktop / Laptop */}
-      <video
-        className="bg-video video-desktop"
-        src="/videos/garima-and-rachecl.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-      />
 
-      {/* Tablet */}
-      <video
-        className="bg-video video-tablet"
-        src="/videos/garima-and-rachecl.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-      />
+                {/* Desktop / Laptop */}
+                <video
+                    className="bg-video video-desktop"
+                    src="/videos/garima-and-rachecl.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                />
 
-      {/* Mobile */}
-      <video
-        className="bg-video video-mobile"
-        src="/videos/garima-and-rachecl.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-      />
+                {/* Tablet */}
+                <video
+                    className="bg-video video-tablet"
+                    src="/videos/garima-and-rachecl.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                />
+
+                {/* Mobile */}
+                <video
+                    className="bg-video video-mobile"
+                    src="/videos/garima-and-rachecl.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                />
 
                 <div className="overlay" style={{ backgroundColor: "#f3f3f33d" }} />
 
@@ -288,82 +288,22 @@ const About = () => {
                             Our Podcast Studio <span className="highlight">Partner</span>
                         </h1>
                     </div>
-                    <div className="about-fourth-cards">
-                        <div className="profile-card" data-aos="zoom-in">
-                            <img
-                                src="/images/people.png"
-                                alt="Profile"
-                                className="profile-img"
-                            />
-
-                            <div className="about-social-icons">
-                                <a href="#"><FaFacebookF /></a>
-                                <a href="#"><FaInstagram /></a>
-                                <a href="#"><FaXTwitter /></a>
-                            </div>
-
-                            <div className="card-footer">
-                                <h2 style={{ color: "#fff" }}>Lorem Ipsum</h2>
-                                <p>Consultant</p>
-                            </div>
+                    <div className="partner-img">
+                        <div className="partner-image">
+                            <img src="/images/WonderLab-Logo.png" alt="WonderLab" />
                         </div>
-                        <div className="profile-card" data-aos="zoom-in">
-                            <img
-                                src="/images/people.png"
-                                alt="Profile"
-                                className="profile-img"
-                            />
-
-                            <div className="about-social-icons">
-                                <a href="#"><FaFacebookF /></a>
-                                <a href="#"><FaInstagram /></a>
-                                <a href="#"><FaXTwitter /></a>
-                            </div>
-
-                            <div className="card-footer">
-                                <h2 style={{ color: "#fff" }}>Lorem Ipsum</h2>
-                                <p>Consultant</p>
-                            </div>
+                        <div className="partner-image">
+                            <img src="/images/podcast-studio-logo.png" alt="Podcast Studio" />
                         </div>
-                        <div className="profile-card" data-aos="zoom-in">
-                            <img
-                                src="/images/people.png"
-                                alt="Profile"
-                                className="profile-img"
-                            />
-
-                            <div className="about-social-icons">
-                                <a href="#"><FaFacebookF /></a>
-                                <a href="#"><FaInstagram /></a>
-                                <a href="#"><FaXTwitter /></a>
-                            </div>
-
-                            <div className="card-footer">
-                                <h2 style={{ color: "#fff" }}>Lorem Ipsum</h2>
-                                <p>Consultant</p>
-                            </div>
-                        </div>
-                        <div className="profile-card" data-aos="zoom-in">
-                            <img
-                                src="/images/people.png"
-                                alt="Profile"
-                                className="profile-img"
-                            />
-
-                            <div className="about-social-icons">
-                                <a href="#"><FaFacebookF /></a>
-                                <a href="#"><FaInstagram /></a>
-                                <a href="#"><FaXTwitter /></a>
-                            </div>
-
-                            <div className="card-footer">
-                                <h2 style={{ color: "#fff" }}>Lorem Ipsum</h2>
-                                <p>Consultant</p>
-                            </div>
-                        </div>
+                        {/* <div className="partner-image">
+                            <img src="/images/WonderLab-Logo.png" alt="WonderLab" />
+                        </div> */}
                     </div>
+
+
                 </div>
             </div>
+
         </div>
     );
 };

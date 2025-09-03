@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import emailjs from "@emailjs/browser";
-import { FaXTwitter, FaInstagram } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
@@ -456,11 +457,11 @@ const Header = () => {
             <a href="https://www.facebook.com/profile.php?id=61579069562747" target="_blank" rel="noopener noreferrer">
               <FaFacebookF />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/24pods1?utm_source=qr&igsh=MWw1d21lMHJkNmJqcQ==" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
             <a href="#">
-              <FaXTwitter />
+              <FaLinkedin />
             </a>
             <a href="#">
               <FaYoutube />

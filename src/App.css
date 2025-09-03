@@ -1587,6 +1587,9 @@ body {
 
 /* Responsive Breakpoints */
 @media (max-width: 992px) {
+  .partner-img {
+  flex-wrap: wrap;
+}
   .help-third-boxes .box {
     flex: 1 1 calc(50% - 20px);
   }
@@ -4576,3 +4579,34 @@ background-color: #261542 !important;
   background-color: #660033;
 }
 
+
+.partner-img {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+  padding: 20px;
+}
+
+.partner-image {
+  flex: 1 1 200px; 
+  /* max-width: 300px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.partner-image:hover {
+  transform: scale(1.05);
+}
+
+.partner-image img {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+}
