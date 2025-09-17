@@ -2941,6 +2941,15 @@ ease;
 }
 
 @media (max-width:1025px){
+  .hero-section {
+    height: 100vh !important;
+}
+    .d-md-block {
+        display: block !important;
+    }
+    .d-lg-block {
+        display: none !important;
+    }
   .small-circle {
     display: none;
 }
