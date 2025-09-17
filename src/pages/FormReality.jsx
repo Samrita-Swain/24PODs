@@ -95,7 +95,7 @@ const FromReality = () => {
           <h1>Inspire From Reality</h1>
         </div>
       </div>
-      <div className="tabs-container" >
+      {/* <div className="tabs-container" >
         <div className="tabs">
           {tabs.map(tab => (
             <button
@@ -129,7 +129,7 @@ const FromReality = () => {
             <button className="cancel-btn" onClick={() => setCurrentVideo(null)}>Cancel</button>
           </div>
         )}
-      </div>
+      </div> */}
       <FromRealityForm />
     </div>
   )

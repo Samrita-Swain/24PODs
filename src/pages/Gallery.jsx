@@ -1,95 +1,86 @@
-import React, { useEffect, useState } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import React, { useState } from "react";
 
-const tabs = ['All', 'Our Lunch', 'BTS Moments'];
+const categories = ["All", "Our Lunch", "BTS Moments"];
 
-const galleryItems = [
-    { id: 1, category: 'Our Lunch', src: '/images/garima-rachecl.png' },
-    { id: 2, category: 'BTS Moments', src: '/images/garima-alka-vblogs.png' },
-    { id: 3, category: 'Our Lunch', src: '/images/about-2.jpg' },
-    { id: 4, category: 'BTS Moments', src: '/images/team.jpeg' },
-    { id: 5, category: 'BTS Moments', src: '/images/about-3.jpg' },
+const videos = [
+  { id: 1, category: "Our Lunch", src: "/images/garima-alka-vblogs.png" },
+  { id: 2, category: "Our Lunch", src: "/images/garima-rachecl.png" },
+  { id: 3, category: "BTS Moments", src: "/images/team.jpeg" },
 ];
 
 const Gallery = () => {
-    useEffect(() => {
-            AOS.init({
-                duration: 1000,
-                once: false,
-                mirror: true
-            });
-        }, []);
-        
-    const [activeTab, setActiveTab] = useState('All');
-    const [selectedImage, setSelectedImage] = useState(null);
+  const [activeTab, setActiveTab] = useState("All");
+  const [modalImage, setModalImage] = useState(null);
 
-    const filteredItems =
-        activeTab === 'All'
-            ? galleryItems
-            : galleryItems.filter(
-                (item) =>
-                    item.category.trim().toLowerCase() ===
-                    activeTab.trim().toLowerCase()
-            );
+  const filteredVideos =
+    activeTab === "All"
+      ? videos
+      : videos.filter((video) => video.category === activeTab);
 
-    return (
-        <div>
-            {/* Banner */}
-            <div className="gallery-first">
-                <div className="content">
-                    <h1>Gallery</h1>
-                </div>
-            </div>
+  const openModal = (src) => setModalImage(src);
+  const closeModal = () => setModalImage(null);
 
-            {/* Tabs */}
-            <div className="gallery-wrapper" data-aos="zoom-in">
-                <div className="tabs">
-                    {tabs.map((tab, index) => (
-                        <button
-                            key={index}
-                            className={`tab-button ${activeTab === tab ? 'active' : ''}`}
-                            onClick={() => setActiveTab(tab)}
-                        >
-                            {tab}
-                        </button>
-                    ))}
-                </div>
+  
+  return (
+    <section>
+      {/* Banner */}
+      <div className="gallery-banner d-flex align-items-center justify-content-center text-center">
+        <h1 className="gallery-title">Gallery</h1>
+      </div>
 
-                {/* Gallery Grid */}
-                <div className="gallery-grid">
-                    {filteredItems.map((item) => (
-                        <div
-                            key={item.id}
-                            className="gallery-item"
-                            onClick={() => setSelectedImage(item.src)}
-                            style={{ cursor: "pointer" }}
-                        >
-                            <img src={item.src} alt={`Gallery ${item.id}`} />
-                        </div>
-                    ))}
-                </div>
-            </div>
-
-            {/* Modal Lightbox */}
-            {selectedImage && (
-                <div className="lightbox-overlay" onClick={() => setSelectedImage(null)}>
-                    <div
-                        className="lightbox-content"
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        <button
-                            className="lightbox-close"
-                            onClick={() => setSelectedImage(null)}
-                        >
-                            ✕
-                        </button>
-                        <img src={selectedImage} alt="Enlarged view" />
-                    </div>
-                </div>
-            )}
+      <div className="gallery-section container py-5">
+        {/* Tabs */}
+        <div className="d-flex flex-wrap justify-content-center gap-3 mb-4">
+          {categories.map((category) => (
+            <button
+              key={category}
+              className={`btn rounded-pill px-4 py-2 fw-medium tab-btn ${
+                activeTab === category ? "active-tab" : "outline-tab"
+              }`}
+              onClick={() => setActiveTab(category)}
+            >
+              {category}
+            </button>
+          ))}
         </div>
-    );
+
+        {/* Grid */}
+        <div className="row g-4 justify-content-center">
+          {filteredVideos.map((video) => (
+            <div key={video.id} className="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div
+                className="video-card"
+                onClick={() => openModal(video.src)}
+                role="button"
+              >
+                <img
+                  src={video.src}
+                  alt="Thumbnail"
+                  className="video-thumbnail"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Modal Overlay */}
+      {modalImage && (
+        <div className="custom-modal" onClick={closeModal}>
+          <span
+            className="close-btn"
+            onClick={(e) => {
+              e.stopPropagation();
+              closeModal();
+            }}
+          >
+            &times;
+          </span>
+          <img src={modalImage} alt="Preview" className="modal-img" />
+        </div>
+      )}
+    </section>
+  );
 };
 
 export default Gallery;

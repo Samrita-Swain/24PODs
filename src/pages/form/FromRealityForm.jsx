@@ -109,7 +109,8 @@ export const FromRealityForm = () => {
 
     return (
         <div className="fr-form-wrap">
-            <div className="text-section" data-aos="fade-up-right">
+           <div className="container">
+             <div className="text-section" data-aos="fade-up-right">
                 <img src="/images/choose-us.png" alt="" />
             </div>
             <div className="fr-card" data-aos="zoom-in">
@@ -184,6 +185,7 @@ export const FromRealityForm = () => {
                     <p className="fr-note">🔒 We respect your privacy — no spam, ever.</p>
                 </form>
             </div>
+           </div>
         </div>
     );
 };

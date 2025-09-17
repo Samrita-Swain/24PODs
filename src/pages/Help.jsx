@@ -1,212 +1,209 @@
-import React, { useEffect, useState } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import { FaPodcast, FaCalendarCheck, FaUsers, FaVideo } from 'react-icons/fa';
 
 
+
 const services = [
-    { name: "Studio", icon: "/images/studio.png", content: " Professional, fully equipped, and ready to make you look & sound your best." },
-    { name: "Shoot", icon: "/images/shoot.png", content: "High-quality recording with the right angles, lighting, and sound." },
-    { name: "Editing", icon: "/images/editing.png", content: "Crisp, polished, and on-brand." },
-    { name: "Ads", icon: "/images/ads.png", content: " Campaigns that get your content seen by the right people." },
-    { name: "Marketing", icon: "/images/marketing.png", content: " Distribution strategies that grow your audience and authority." },
+    {
+        title: "Studio",
+        image: "/images/studio.png",
+        description: "High-quality recording with the right angles, lighting, and sound."
+    },
+    {
+        title: "Shoot",
+        image: "/images/shoot.png",
+        description: "Professional shoots with perfect direction and framing."
+    },
+    {
+        title: "Editing",
+        image: "/images/editing.png",
+        description: "Seamless editing with transitions, effects, and polishing."
+    },
+    {
+        title: "Ads",
+        image: "/images/ads.png",
+        description: "Engaging ads crafted for maximum audience impact."
+    },
+    {
+        title: "Marketing",
+        image: "/images/marketing.png",
+        description: "Boost your brand with creative marketing strategies."
+    }
 ];
 
-const features = [
-    {
-        icon: <FaPodcast />,
-        title: 'Manage the entire podcast shoot from start to finish.',
-    },
-    {
-        icon: <FaCalendarCheck />,
-        title: 'Arrange shows and recording schedules tailored to your goals.',
-    },
-    {
-        icon: <FaUsers />,
-        title: 'Source and coordinate guests who match your brand and audience.',
-    },
-    {
-        icon: <FaVideo />,
-        title:
-            'Provide host coaching, set design, and on-site support to make you feel camera-ready.',
-    },
-];
+
 
 const Help = () => {
-    const [activeTab, setActiveTab] = useState('production');
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            once: false,
-            mirror: true
-        });
-    }, []);
-    return (
-        <div>
-            <div className="help-first">
-                <div className="content">
-                    <h1 style={{ textAlign: "center" }}>How Can we Help</h1>
-                </div>
-            </div>
-            <div className="help-second section-container">
-                <div className="left-content">
-                    <div className="text-section">
-                        <h1>
-                            All that you <span className="highlight">need</span>
-                        </h1>
-                        <p>From the first click of the camera to your audience hitting “play,” we handle it all.</p>
-                    </div>
+     const [activeTab, setActiveTab] = useState('production');
 
-                    <div className="service-grid">
-                        {services.map((service) => (
-                            <div className="service-box" key={service.name}>
-                                <div className="service-front">
-                                    <img src={service.icon} alt={service.name} />
-                                    <p>{service.name}</p>
-                                </div>
-                                <div className="service-back">
-                                    <p>{service.content}</p>
+  const productionContent = [
+    {
+      icon: <FaPodcast />,
+      text: 'Manage the entire podcast shoot from start to finish.',
+    },
+    {
+      icon: <FaCalendarCheck />,
+      text: 'Arrange shows and recording schedules tailored to your goals.',
+    },
+    {
+      icon: <FaUsers />,
+      text: 'Source and coordinate guests who match your brand and audience.',
+    },
+    {
+      icon: <FaVideo />,
+      text: 'Provide host coaching, set design, and on-site support to make you feel camera-ready.',
+    },
+  ];
+
+  const postProductionContent = [
+    {
+      title: 'Editing',
+      text: 'Most videos lose viewers in the first 10 seconds. We keep them watching with sharp cuts, clean audio, and visuals that feel premium from start to finish—so your content holds attention, not dust.',
+    },
+    {
+      title: 'Social Media',
+      text: 'Good content is wasted if it never reaches the right eyes. We tailor reels, captions, thumbnails, and hashtags for each platform, turning casual scrollers into engaged followers and loyal listeners.',
+    },
+    {
+      title: 'Ads',
+      text: 'Throwing money at ads without strategy is a fast way to get nothing back. We create campaigns built for your audience, delivering attention that translates into clicks, conversations, and conversions.',
+    },
+  ];
+  useEffect(() => {
+          AOS.init({
+              duration: 1000,
+              once: false,
+              mirror: true
+          });
+      }, []);
+
+    return (
+       <section>
+         <div className="help-banner d-flex align-items-center justify-content-center text-center">
+      <h1 className="help-title">How Can We Help</h1>
+    </div>
+        <div className="services-section container py-5">
+            <div className="row align-items-center">
+
+                {/* Left Side */}
+                <div className="col-lg-6 col-md-12 mb-4">
+                    <h2 className="section-title" style={{fontSize:"35px"}}>All that you need</h2>
+                    <p className="section-subtitle">
+                        From the first click of the camera to your audience hitting
+                        <span className="highlight" style={{color:"#660033"}}> “play,”</span> we handle it all.
+                    </p>
+
+                    <div className="row g-3">
+                        {services.map((service, index) => (
+                            <div className="col-6" key={index}>
+                                <div className="flip-card">
+                                    <div className="flip-card-inner">
+                                        {/* Front */}
+                                        <div className="flip-card-front">
+                                            <img src={service.image} alt={service.title} className="service-img-icon" />
+                                            <p>{service.title}</p>
+                                        </div>
+
+                                        {/* Back */}
+                                        <div className="flip-card-back">
+                                            <p>{service.description}</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         ))}
                     </div>
                 </div>
 
-                <div className="right-content" data-aos="zoom-out">
-                    <div className="image-stack">
-                        <img src="/images/garima.jpg" alt="Host 1" className="host-img" />
-                        <img src="/images/alka.jpg" alt="Host 2" className="host-img second-img" />
-                        <a href="/inspire_from_reality"><div className="play-button">&#9658;</div></a>
+                {/* Right Side */}
+                <div className="col-lg-6 col-md-12 text-center">
+                    <div className="images-wrapper"  data-aos="zoom-out">
+                        <img
+                            src="/images/garima.jpg"
+                            alt="Service 1"
+                            className="service-img"
+                        />
+                        <img
+                            src="/images/alka.jpg"
+                            alt="Service 2"
+                            className="service-img"
+                        />
                     </div>
                 </div>
             </div>
-            <div className="help_third">
-                <div className="tab-wrapper">
-                    <div className="tab-buttons">
-                        <button
-                            className={activeTab === 'production' ? 'active' : ''}
-                            onClick={() => setActiveTab('production')}
-                        >
-                            Production
-                        </button>
-                        <button
-                            className={activeTab === 'postproduction' ? 'active' : ''}
-                            onClick={() => setActiveTab('postproduction')}
-                        >
-                            Post Production
-                        </button>
-                    </div>
-
-                    {/* Production Section */}
-                    {activeTab === 'production' && (
-                        <div className="tab-content" data-aos="fade-up">
-                            <div className="features-container">
-                                {features.map((feature, index) => (
-                                    <div key={index} className="feature-card">
-                                        <div className="icon">{feature.icon}</div>
-                                        <p>{feature.title}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    )}
-
-                    {/* Post Production Section */}
-                    {activeTab === 'postproduction' && (
-                        <div>
-                            <div className='help_post'>
-                                <div className="help-third-section">
-                                    {/* <div className="text-section">
-                                    <h1> Post Production </h1>
-                                </div> */}
-                                    <div className="help-third-boxes">
-                                        <div className="box" data-aos="zoom-in-right">
-                                            <h1>Editing</h1> <div className="paragraph">
-                                                <div className="straight-line"></div>
-                                                <p> Most videos lose viewers in the first 10 seconds. We keep them watching with sharp cuts,
-                                                    clean audio, and visuals that feel premium from start to finish—so your content holds attention,
-                                                    not dust. </p>
-                                            </div>
-                                        </div> <div className="box second-box" data-aos="zoom-in-down">
-                                            <h1>Social Media</h1>
-                                            <div className="paragraph">
-                                                <p> Good content is wasted if it never reaches the right eyes. We tailor reels,
-                                                    captions, thumbnails, and hashtags for each platform, turning casual scrollers into
-                                                    engaged followers and loyal listeners. </p>
-                                            </div>
-                                        </div>
-                                        <div className="box" data-aos="zoom-in-left">
-                                            <h1>Ads </h1>
-                                            <div className="paragraph">
-                                                <div className="straight-line">
-                                                </div>
-                                                <p> Throwing money at ads without strategy is a fast way to get nothing back.
-                                                    We create campaigns built for your audience, delivering attention that
-                                                    translates into clicks, conversations, and conversions. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    )}
-
-                </div>
-                <button class="button home-button aos-init aos-animate" data-aos="fade-up" style={{ marginTop: "40px", border: "none" }}>
-                    <a href="/files/packages.pdf" target="_blank" rel="noopener noreferrer">View Packages</a>
-                </button>
-            </div>
-            {/* <div className="help-fourth">
-                <img src="/images/dots.png" alt="" className='help-fourth-img'/>
-                <div className="editing-container container">
-                    <div className="editing-image" data-aos="zoom-in-right">
-                        <div className="image-border">
-                            <img src="/images/help-editing.png" alt="Editing" />
-                        </div>
-                    </div>
-                    <div className="editing-content" data-aos="zoom-in-left">
-                        <h5>Editing</h5>
-                        <h1 className="subheading">We edit and you manage</h1>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text ever
-                            since the 1500s, when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has survived not only
-                            five centuries, but also the leap into electronic typesetting,
-                            remaining essentially unchanged.
-                        </p>
-                        <button className="button menu-button mt-6 help-button" style={{marginBottom:"0"}}>
-                            <a href="/contact_us">Join Us</a>
-                        </button>
-                    </div>
-                </div>
-            </div> */}
-            {/* <div className="help-fifth about-third">
-                <div className="about-container about-third-section container">
-                    <div className="editing-content">
-                        <h5>Podcast marketing</h5>
-                        <h1 className="subheading">Let us handle your socials and ads</h1>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text ever
-                            since the 1500s, when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has survived not only
-                            five centuries, but also the leap into electronic typesetting,
-                            remaining essentially unchanged.
-                        </p>
-                        <button className="button menu-button mt-6 help-button" style={{marginBottom:"0"}}>
-                            <a href="/contact_us">Join Us</a>
-                        </button>
-                    </div>
-
-                    <div className="image-section">
-                        <img src="/images/social media.png" alt="" />
-                    </div>
-
-                </div>
-            </div> */}
         </div>
-    )
-}
+        <div className='tab-section-part'>
+            <Container className="tabs-section py-5">
+      <div className="d-flex justify-content-center" style={{marginBottom: "40px"}}>
+        <Button
+          variant={activeTab === 'production' ? 'danger' : 'outline-danger'}
+          className="mx-2"
+          onClick={() => setActiveTab('production')}
+        >
+          Production
+        </Button>
+        <Button
+          variant={activeTab === 'post' ? 'danger' : 'outline-danger'}
+          className="mx-2"
+          onClick={() => setActiveTab('post')}
+        >
+          Post Production
+        </Button>
+      </div>
 
-export default Help
+      <Row className="justify-content-center">
+        {activeTab === 'production' &&
+          productionContent.map((item, index) => (
+            <Col
+              xs={12}
+              sm={6}
+              md={4}
+              lg={3}
+              key={index}
+              className="mb-4 d-flex align-items-stretch"
+              data-aos="fade-up"
+            >
+              <div className="custom-card text-center p-4 w-100">
+                <div className="icon mb-3">{item.icon}</div>
+                <p style={{text:"#fff"}}>{item.text}</p>
+              </div>
+            </Col>
+          ))}
+
+        {activeTab === 'post' &&
+          postProductionContent.map((item, index) => (
+            <Col
+            xs={12}
+            md={6}
+            lg={4}
+            key={index}
+            className="mb-4 d-flex align-items-stretch"
+            data-aos="fade-up"
+          >
+            <div
+              className={`post-production-card custom-card text-start p-4 w-100 ${
+                item.title === "Social Media" ? "social-media-card" : ""
+              }`}
+            >
+              <h5 className="card-title">{item.title}</h5>
+              <p className="card-text">{item.text}</p>
+            </div>
+          </Col>
+          ))}
+      </Row>
+
+      <div className="text-center mt-4" data-aos="fade-up">
+        <a href="/files/packages.pdf" target="_blank" rel="noopener noreferrer"><Button variant="danger">View Packages</Button></a>
+
+      </div>
+    </Container>
+        </div>
+       </section>
+    );
+};
+
+export default Help;
