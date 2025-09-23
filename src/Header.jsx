@@ -81,8 +81,8 @@ const Header = ({ onOpenForm }) => {
           <a href="https://www.instagram.com/24pods1?utm_source=qr&igsh=MWw1d21lMHJkNmJqcQ==" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
-          <a href="#"><FaLinkedin /></a>
-          <a href="#"><FaYoutube /></a>
+          <a href="https://www.linkedin.com/company/108916453/admin/dashboard/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+          <a href="https://www.youtube.com/@24pods" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
         </div>
       </div>
     </>
