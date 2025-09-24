@@ -30,7 +30,7 @@ const Gallery = () => {
 
       <div className="gallery-section container py-5">
         {/* Tabs */}
-        <div className="d-flex flex-wrap justify-content-center gap-3 mb-4">
+        <div className="d-flex flex-wrap justify-content-center mb-4">
           {categories.map((category) => (
             <button
               key={category}
