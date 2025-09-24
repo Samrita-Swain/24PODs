@@ -66,20 +66,20 @@ const Contact = () => {
           <div className="p-4 shadow rounded bg-white mb-4">
             <div className="d-flex align-items-start mb-3">
               <FaMapMarkerAlt className="icon me-3" />
-              <p className="mb-0">
+              <p className="mb-0" style={{color:"#000", fontWeight:"500"}}>
                 Level 5 Nexus Norwest, 4 Columbia Ct, Norwest NSW 2153
               </p>
             </div>
 
             <div className="d-flex align-items-start mb-3">
               <FaPhoneAlt className="icon me-3" />
-              <p className="mb-0">+61 416 461 094</p>
+               <a href="tel:+61 416461094" style={{color:"#000", fontWeight:"500"}}>+61 416461094</a>
             </div>
 
             <div className="d-flex align-items-start">
               <FaEnvelope className="icon me-3" />
               <p className="mb-0">
-                <a href="mailto:alaka.satapathy@digiware.com.au">
+                <a href="mailto:alaka.satapathy@digiware.com.au" style={{color:"#000", fontWeight:"500"}}>
                   alaka.satapathy@digiware.com.au
                 </a>
               </p>

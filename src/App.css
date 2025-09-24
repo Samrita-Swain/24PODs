@@ -187,7 +187,7 @@ footer a:hover{
 /* Bottom bar */
 .footer-bottom {
   background-color: #1b0b34; /* dark purple */
-  padding: 0.8rem 0;
+  padding: 0.8rem;
   color: #fff;
   font-size: 0.9rem;
 }
@@ -210,6 +210,9 @@ footer a:hover{
 /* Responsive */
 @media (max-width: 768px) {
   footer a{
+    font-size: 14px;
+  }
+  footer p{
     font-size: 14px;
   }
   .experience-badge {
@@ -377,6 +380,9 @@ a{
 /* Form elements */
 .popup-overlay .form-label {
   color: #fff;
+  font-weight: 500;
+}
+.form-label{
   font-weight: 500;
 }
 
@@ -678,9 +684,10 @@ a{
   width: 70%;
   height: 500px;
 }
-.about-second-img img{
-  width: 100%;
-  height: 100%;
+.about-second-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -800,6 +807,10 @@ a{
 }
 
 @media (max-width: 767px) {
+  .cta-btn-header {
+    font-size: 12px;
+    padding: 8px 10px;
+}
   .problem-section  .section-title {
     font-size: 1.5rem;
   }
@@ -2941,6 +2952,9 @@ ease;
 }
 
 @media (max-width:1025px){
+  .guest-video-section {
+    height: 20vh;
+}
   .hero-section {
     height: 100vh !important;
 }
@@ -2957,3 +2971,9 @@ ease;
     width: 100%;
 }
 }
+
+
+@media (min-width:992px){
+.gallery-section  .col-6.col-sm-4.col-md-3.col-lg-2 {
+    width: 25% !important;
+}}

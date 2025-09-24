@@ -23,7 +23,7 @@ const ContactUs = () => {
           </div>
           <div className="info-item">
             <FaPhoneAlt className="icon" />
-            <p>+61 416461094</p>
+           <a href="tel:+61 416461094">+61 416461094</a>
           </div>
           <div className="info-item">
             <FaEnvelope className="icon" />
